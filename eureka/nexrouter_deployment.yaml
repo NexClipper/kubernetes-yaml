@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: nexrouter
-          image: nexclipper/nexrouter:k8s-v0.1
+          image: nexclipper/nexeureka:k8s-v0.1
           ports:
             - containerPort: 8770
               name: nexrouter
