@@ -4,7 +4,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: broker
-  namespace: kafka
+  namespace: nexclipper
 spec:
   ports:
   - port: 9092
