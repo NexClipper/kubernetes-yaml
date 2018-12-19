@@ -21,7 +21,7 @@ spec:
         - name:  KILLBILL_PASSWORD
           value: password
         - name:  KILLBILL_URL
-          value: http://billing-kb.nexclipper:8080
+          value: http://billing-kb.nexclipper:10100
         - name:  SPRING_INFLUXDB_DATABASE
           value: meter
         - name:  SPRING_DATASOURCE_PASSWORD

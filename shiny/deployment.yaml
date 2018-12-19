@@ -1,0 +1,41 @@
+  apiVersion: apps/v1beta2
+  kind: Deployment
+  metadata:
+    name: shiny
+    namespace: nexclipper
+    labels:
+      app: shiny
+  spec:
+    replicas: 1
+    selector:
+      matchLabels:
+        app: shiny
+    template:
+      metadata:
+        labels:
+          app: shiny
+      spec:
+        containers:
+        - env:
+          - name: HOSTAPI_ADDRESS
+            value: "http://host.nexclipper:10100"
+          - name: R_INFLUX_PORT
+            value: "8087"
+          - name: R_INFLUX_DBNAME
+            value: "nexclipper"
+          - name: R_HOSTAPI_ADDRESS
+            value: "http://host.nexclipper:10100"
+          - name: INFLUX_DBNAME
+            value: "nexclipper"
+          - name: R_INFLUX_ADDRESS
+            value: "http://influx.nexclipper"
+          - name: INFLUX_PORT
+            value: "8087"
+          - name: INFLUX_ADDRESS
+            value: "http://influx.nexclipper"
+          image: blpoms/nexprophet:latest
+          imagePullPolicy: Always
+          name: influx
+          ports:
+          - containerPort: 3838
+  status: {}

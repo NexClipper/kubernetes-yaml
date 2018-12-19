@@ -17,6 +17,11 @@ spec:
       containers:
         - name: nexclipper-ui
           image: nexclipper/sassnexclipperui:k8s-v0.1
+          resources:
+            limits:
+              memory: 2Gi
+            requests:
+              memory: 2Gi
           imagePullPolicy: Always
           ports:
             - containerPort: 9000
@@ -47,7 +52,7 @@ spec:
             - name: KILLBILL_IP
               value: "billing-kb.nexclipper"
             - name: KILLBILL_PORT
-              value: '8080'
+              value: '10100'
             - name: PAYPAL_RETURN_URL
               value: "https://server.nexclipper.com/nexcloud_nexclipperui/v1/billing/payPalCheckout"
             - name: KILLBILL_IP

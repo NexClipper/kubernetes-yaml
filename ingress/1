@@ -1,0 +1,21 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: "kube-nexclipper"
+spec:
+  rules:
+  - host: kube.nexclipper.com
+    http:
+      paths:
+      - path: /*
+        backend:
+          serviceName:servicegate
+          servicePort: 10100
+  - host: aikube.nexclipper.com
+    http:
+      paths:
+      - path: /*
+        backend:
+          serviceName: shiny
+          servicePort: 3838
+

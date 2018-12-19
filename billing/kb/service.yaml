@@ -9,6 +9,7 @@ spec:
   type: NodePort
   ports:
   - nodePort: 32002
-    port: 8080
+    targetPort: 8080
+    port: 10100
   selector:
     app: billing-kb
