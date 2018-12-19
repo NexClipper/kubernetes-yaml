@@ -17,6 +17,32 @@ spec:
       containers:
         - name: nexgate
           image: nexclipper/nexgate:k8s-v0.1
+          imagePullPolicy: Always
           ports:
             - containerPort: 9999
               name: nexgate
+          env:
+          - name: SERVICE_ID
+            value: "/nex-dashboard,/nexcloud_nexclipperui"
+          - name: NON_URI
+            value: "/nex-dashboard/v1/agent/token,/nexcloud_nexclipperui/v1/agent/token,/nex-dashboard/v1/password/check,/nexcloud_nexclipperui/v1/password/check,"
+          - name: COLLECTOR_SERVICE_ID
+            value: "/nexcloud_collector"
+          - name: NON_SERVICE_ID
+            value: "/nexoauth2"
+          - name: REDIS_HOST
+            value: redis.nexclipper
+          - name: REDIS_PORT
+            value: '6379'
+          - name: EUREKA_ENDPOINT
+            value: "http://nexrouter.nexclipper:8770/eureka/"
+          - name: PROTOCOL
+            value: "http"
+          - name: MYSQL_URL
+            value: "mysql.nexclipper"
+          - name: MYSQL_PASSWORD
+            value: "password"
+          - name: MYSQL_USERNAME
+            value: "admin"
+          - name: MYSQL_PORT
+            value: '3306'

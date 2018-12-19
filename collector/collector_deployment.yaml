@@ -1,29 +1,33 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: search
+  name: collector
   labels: 
-    app: search
+    app: collector
     version: v1
   namespace: nexclipper
 spec:
-  replicas: 1
+  replicas: 3
   template:
     metadata:
-      name: search
+      name: collector
       labels:
-        app: search
+        app: collector
     spec:
       containers:
-        - name: searchapi
-          image: nexclipper/search:k8s-v0.1
+        - name: collector
+          image: nexclipper/nexcollector:k8s-v0.1
           imagePullPolicy: Always
           ports:
-            - containerPort: 8080
-              name: searchapi
+            - containerPort: 9000
+              name: collector
           env:
-            - name: INFLUXDB_ENDPOINT
-              value: "http://influx.nexclipper:8087"
+            - name: KAFKA_ZOOKEEPER
+              value: "kafka-zookeeper.kafka:2181"
+            - name: KAFKA_PORT
+              value: '9092'
+            - name: KAFKA_HOST
+              value: "kafka-kafka.kafka"
             - name: MYSQL_DBNAME
               value: "defaultdb"
             - name: MYSQL_URL
@@ -34,3 +38,7 @@ spec:
               value: "admin"
             - name: INFLUXDB_DATASOURCE
               value: "nexclipper"
+            - name: REDIS_HOST
+              value: redis.nexclipper
+            - name: REDIS_PORT
+              value: '6379'

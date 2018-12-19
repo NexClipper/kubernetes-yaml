@@ -21,7 +21,7 @@ spec:
         - name:  KILLBILL_PASSWORD
           value: password
         - name:  KILLBILL_URL
-          value: http://billing-db.nexclipper:8080
+          value: http://billing-kb.nexclipper:8080
         - name:  SPRING_INFLUXDB_DATABASE
           value: meter
         - name:  SPRING_DATASOURCE_PASSWORD
@@ -37,9 +37,9 @@ spec:
         - name:  KILLBILL_APIKEY
           value: admin
         - name:  SPRING_DATASOURCE_URL
-          value: jdbc:mysql://billing-db.nexclipper:3306/kaui
+          value: jdbc:mysql://billing-db.nexclipper:3306/killbill
         - name:  SPRING_CLOUD_STREAM_KAFKA_BINDER_BROKERS
-          value: broker.kafka.l4lb.thisdcos.directory:9092
+          value: kafka-kafka.kafka:9092
         ports:
         - name: kb
           containerPort: 8080

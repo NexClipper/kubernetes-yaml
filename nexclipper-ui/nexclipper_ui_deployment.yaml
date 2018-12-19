@@ -17,6 +17,7 @@ spec:
       containers:
         - name: nexclipper-ui
           image: nexclipper/sassnexclipperui:k8s-v0.1
+          imagePullPolicy: Always
           ports:
             - containerPort: 9000
               name: nexclipper-ui
@@ -36,17 +37,17 @@ spec:
             - name: REDIS_PORT
               value: '6379'
             - name: MESOS_API_ENDPOINT
-              value: "cluster.nexclipper:10100"
+              value: "http://cluster.nexclipper:10100"
             - name: HOST_API_ENDPOINT
-              value: "host.nexclipper:10100"
+              value: "http://host.nexclipper:10100"
             - name: SEARCH_API_ENDPOINT
-              value: "search.nexclipper:10100"
+              value: "http://search.nexclipper:10100"
             - name: AUTH_API_ENDPOINT
-              value: "auth.nexclipper:10100"
+              value: "http://auth.nexclipper:10100"
             - name: KILLBILL_IP
               value: "billing-kb.nexclipper"
             - name: KILLBILL_PORT
-              value: '10100'
+              value: '8080'
             - name: PAYPAL_RETURN_URL
               value: "https://server.nexclipper.com/nexcloud_nexclipperui/v1/billing/payPalCheckout"
             - name: KILLBILL_IP

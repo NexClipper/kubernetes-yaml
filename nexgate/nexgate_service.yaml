@@ -10,9 +10,11 @@ spec:
   type: NodePort
   ports:
   - port: 10100
-    protocol: TCP
     targetPort: 9999
+    protocol: TCP
     name: http
+  externalIPs:
+  - 192.168.0.174
   selector:  
     app: nexgate
 

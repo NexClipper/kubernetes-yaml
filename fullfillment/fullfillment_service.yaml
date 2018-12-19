@@ -1,9 +1,9 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: servicegate
+  name: fullfillment
   labels: 
-    app: servicegate
+    app: fullfillment
     version: v0.1
   namespace: nexclipper
 spec:
@@ -11,10 +11,7 @@ spec:
   ports:
   - port: 10100
     protocol: TCP
-    targetPort: 9999
+    targetPort: 9000
     name: http
-  externalIPs:
-  - 192.168.0.175
   selector:  
-    app: servicegate
-
+    app: fullfillment

@@ -17,6 +17,7 @@ spec:
       containers:
         - name: auth
           image: nexclipper/nex-oauth2:k8s-v0.1
+          imagePullPolicy: Always
           ports:
             - containerPort: 8888
               name: auth

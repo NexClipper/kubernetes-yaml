@@ -17,6 +17,7 @@ spec:
       containers:
         - name: clusterapi
           image: nexclipper/mesos:k8s-v0.1
+          imagePullPolicy: Always
           ports:
             - containerPort: 9000
               name: clusterapi

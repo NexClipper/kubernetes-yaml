@@ -17,6 +17,7 @@ spec:
       containers:
         - name: servicegate
           image: nexclipper/servicegate:k8s-v0.1
+          imagePullPolicy: Always
           ports:
             - containerPort: 9999
               name: servicegate
@@ -28,8 +29,12 @@ spec:
           - name: COLLECTOR_SERVICE_ID
             value: "/nexcloud_collector"
           - name: NON_SERVICE_ID
-            value: "/nexcloud_collector"
-          - name: REDIS_ENDPOINT
+            value: "/nexoauth2"
+          - name: REDIS_HOST
             value: redis.nexclipper
           - name: REDIS_PORT
             value: '6379'
+          - name: EUREKA_ENDPOINT
+            value: "http://nexrouter.nexclipper:8770/eureka/"
+          - name: PROTOCOL
+            value: "http"

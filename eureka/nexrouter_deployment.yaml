@@ -16,12 +16,26 @@ spec:
     spec:
       containers:
         - name: nexrouter
-          image: nexclipper/nexeureka:k8s-v0.1
+          image: nexclipper/nexrouter:k8s-v0.1
+          resources:
+            limits:
+              memory: 2Gi
+            requests:
+              memory: 2Gi
           ports:
             - containerPort: 8770
               name: nexrouter
+          imagePullPolicy: Always
           env:
             - name: DEFAULT_ZONE
               value: "http://localhost:8770/eureka/"
             - name: EUREKA_ENDPOINT
               value: "http://localhost:8770/eureka/apps"
+            - name: CLUSTER_MODEL
+              value: "K8S"
+            - name: REDIS_HOST
+              value: "redis.nexclipper"
+            - name: REDIS_PORT
+              value: '6379'
+            - name: ROUTER_DNS
+              value: "nexcloud_nexoauth2#auth.nexclipper:10100,nexcloud_nexclipperui#nexclipper-ui.nexclipper:10100,nexcloud_collector#collector.nexclipper:10100"

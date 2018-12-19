@@ -17,6 +17,7 @@ spec:
       containers:
         - name: hosthapi
           image: nexclipper/host:k8s-v0.1
+          imagePullPolicy: Always
           ports:
             - containerPort: 9000
               name: hostapi
