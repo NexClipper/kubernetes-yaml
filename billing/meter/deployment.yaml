@@ -15,6 +15,7 @@ spec:
       containers:
       - name: billing-meter
         image: nexclipper/meter:v1
+        imagePullPolicy: Always
         env:
         - name: SPRING_DATASOURCE_USERNAME
           value: root

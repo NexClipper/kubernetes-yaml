@@ -15,6 +15,7 @@ spec:
       containers:
       - name: billing-kb
         image: sppark/killbill:0.20.2
+        imagePullPolicy: Always
         env:
         - name: KILLBILL_DAO_URL
           value: jdbc:mysql://billing-db.nexclipper:3306/killbill
