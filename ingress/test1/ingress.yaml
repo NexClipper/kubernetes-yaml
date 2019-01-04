@@ -3,9 +3,6 @@
  metadata:
    name: kube-nexclipper
    namespace: nexclipper
-   annotations:
-     nginx.igress.kubernetes.io/rewrite-target: /
-     kubernetes.io/ingress.class: "nginx"
  spec:
    rules:
    - host: kube.nexclipper.com
@@ -22,3 +19,4 @@
          backend:
            serviceName: shiny
            servicePort: 80
+

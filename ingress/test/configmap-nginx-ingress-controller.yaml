@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: nginx-ingress-controller-conf
+  namespace: nexclipper
+  labels:
+    app: nginx-ingress-lb
+    group: lb
+data:
+  enable-vts-status: 'true'
+  enable-sticky-sessions: 'true'

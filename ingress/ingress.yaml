@@ -2,7 +2,7 @@
  kind: Ingress
  metadata:
    name: kube-nexclipper
-   namespace: ingress
+   namespace: ingress-nginx
    annotations:
      nginx.igress.kubernetes.io/rewrite-target: /
  spec:
@@ -12,12 +12,6 @@
        paths:
        - path: /*
          backend:
-           serviceName: servicegate.nexclipper
+           serviceName: servicegate
            servicePort: 10100
-   - host: aikube.nexclipper.com
-     http:
-       paths:
-       - path: /*
-         backend:
-           serviceName: shiny.nexclipper
-           servicePort: 3838
+

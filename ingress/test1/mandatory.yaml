@@ -1,10 +1,18 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: ingress-nginx
+  labels:
+    app.kubernetes.io/name: ingress-nginx
+    app.kubernetes.io/part-of: ingress-nginx
+
 ---
 
 kind: ConfigMap
 apiVersion: v1
 metadata:
   name: nginx-configuration
-  namespace: nexclipper
+  namespace: ingress-nginx
   labels:
     app.kubernetes.io/name: ingress-nginx
     app.kubernetes.io/part-of: ingress-nginx
@@ -14,7 +22,7 @@ kind: ConfigMap
 apiVersion: v1
 metadata:
   name: tcp-services
-  namespace: nexclipper
+  namespace: ingress-nginx
   labels:
     app.kubernetes.io/name: ingress-nginx
     app.kubernetes.io/part-of: ingress-nginx
@@ -24,7 +32,7 @@ kind: ConfigMap
 apiVersion: v1
 metadata:
   name: udp-services
-  namespace: nexclipper
+  namespace: ingress-nginx
   labels:
     app.kubernetes.io/name: ingress-nginx
     app.kubernetes.io/part-of: ingress-nginx
@@ -34,7 +42,7 @@ apiVersion: v1
 kind: ServiceAccount
 metadata:
   name: nginx-ingress-serviceaccount
-  namespace: nexclipper
+  namespace: ingress-nginx
   labels:
     app.kubernetes.io/name: ingress-nginx
     app.kubernetes.io/part-of: ingress-nginx
@@ -100,7 +108,7 @@ apiVersion: rbac.authorization.k8s.io/v1beta1
 kind: Role
 metadata:
   name: nginx-ingress-role
-  namespace: nexclipper
+  namespace: ingress-nginx
   labels:
     app.kubernetes.io/name: ingress-nginx
     app.kubernetes.io/part-of: ingress-nginx
@@ -145,7 +153,7 @@ apiVersion: rbac.authorization.k8s.io/v1beta1
 kind: RoleBinding
 metadata:
   name: nginx-ingress-role-nisa-binding
-  namespace: nexclipper
+  namespace: ingress-nginx
   labels:
     app.kubernetes.io/name: ingress-nginx
     app.kubernetes.io/part-of: ingress-nginx
@@ -156,7 +164,7 @@ roleRef:
 subjects:
   - kind: ServiceAccount
     name: nginx-ingress-serviceaccount
-    namespace: nexclipper
+    namespace: ingress-nginx
 
 ---
 apiVersion: rbac.authorization.k8s.io/v1beta1
@@ -173,7 +181,7 @@ roleRef:
 subjects:
   - kind: ServiceAccount
     name: nginx-ingress-serviceaccount
-    namespace: nexclipper
+    namespace: ingress-nginx
 
 ---
 
@@ -181,12 +189,12 @@ apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
   name: nginx-ingress-controller
-  namespace: nexclipper
+  namespace: ingress-nginx
   labels:
     app.kubernetes.io/name: ingress-nginx
     app.kubernetes.io/part-of: ingress-nginx
 spec:
-  replicas: 4
+  replicas: 1
   selector:
     matchLabels:
       app.kubernetes.io/name: ingress-nginx
@@ -206,12 +214,12 @@ spec:
           image: quay.io/kubernetes-ingress-controller/nginx-ingress-controller:0.21.0
           args:
             - /nginx-ingress-controller
+            - --default-backend-service=$(POD_NAMESPACE)/default-http-backend
             - --configmap=$(POD_NAMESPACE)/nginx-configuration
             - --tcp-services-configmap=$(POD_NAMESPACE)/tcp-services
             - --udp-services-configmap=$(POD_NAMESPACE)/udp-services
             - --publish-service=$(POD_NAMESPACE)/ingress-nginx
             - --annotations-prefix=nginx.ingress.kubernetes.io
-            - --default-backend-service=$(POD_NAMESPACE)/default-backend
           securityContext:
             capabilities:
               drop:

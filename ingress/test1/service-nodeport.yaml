@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: ingress-nginx
-  namespace: nexclipper
+  namespace: ingress-nginx
   labels:
     app.kubernetes.io/name: ingress-nginx
     app.kubernetes.io/part-of: ingress-nginx
@@ -20,9 +20,4 @@ spec:
   selector:
     app.kubernetes.io/name: ingress-nginx
     app.kubernetes.io/part-of: ingress-nginx
-  externalIPs:
-  - 192.168.0.171
-  - 192.168.0.172
-  - 192.168.0.173
-  - 192.168.0.174
-  - 192.168.0.175
+
