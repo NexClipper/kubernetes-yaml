@@ -39,6 +39,8 @@ spec:
                 key: admin-password
           - name: GF_AUTH_ANONYMOUS_ENABLED
             value: "false"
+          - name: GF_INSTALL_PLUGINS
+            value: grafana-piechart-panel
         readinessProbe:
           httpGet:
             path: /login
