@@ -14,6 +14,12 @@ spec:
     spec:
       containers:
       - name: billing-meter
+        resources:
+          limits:
+            memory: 512Mi
+          requests:
+            memory: 512Mi
+
         image: nexclipper/meter:v1
         imagePullPolicy: Always
         env:

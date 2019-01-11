@@ -1,5 +1,8 @@
 #! /bin/bash
 
+# delete ex) ./billing.sh delete
+# apply ex) ./billing.sh apply
+
 kubectl $1 -f db/service.yaml
 kubectl $1 -f db/deployment.yaml 
 

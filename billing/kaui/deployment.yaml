@@ -14,6 +14,12 @@ spec:
     spec:
       containers:
       - name: billing-kaui
+        resources:
+          limits:
+            memory: 1Gi
+          requests:
+            memory: 1Gi
+
         image: killbill/kaui:1.0.4
         env:
         - name: KAUI_CONFIG_DAO_URL
