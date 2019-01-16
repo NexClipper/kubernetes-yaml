@@ -13,8 +13,6 @@ spec:
     protocol: TCP
     targetPort: 9000
     name: http
-  externalIPs:
-  - 192.168.0.173
   selector:  
     app: cluster
 

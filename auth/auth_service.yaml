@@ -12,8 +12,6 @@ spec:
     protocol: TCP
     targetPort: 8888
     name: http
-  externalIPs:
-  - 192.168.0.176
   selector:  
     app: auth
 

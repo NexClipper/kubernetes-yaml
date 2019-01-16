@@ -13,8 +13,6 @@ spec:
     targetPort: 9999
     protocol: TCP
     name: http
-  externalIPs:
-  - 192.168.0.174
   selector:  
     app: nexgate
 

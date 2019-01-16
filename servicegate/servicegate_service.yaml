@@ -13,8 +13,6 @@ spec:
     protocol: TCP
     targetPort: 9999
     name: http
-  externalIPs:
-  - 192.168.0.175
   selector:  
     app: servicegate
 
