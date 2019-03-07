@@ -33,7 +33,7 @@
             value: "8087"
           - name: INFLUX_ADDRESS
             value: "http://influx.nexclipper"
-          image: blpoms/nexprophet:latest
+          image: nexclipper/nexprophet:latest
           imagePullPolicy: Always
           name: influx
           ports:

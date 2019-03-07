@@ -17,6 +17,11 @@ spec:
       containers:
         - name: servicegate
           image: nexclipper/servicegate:k8s-v0.1
+          resources:
+            limits:
+              memory: 2Gi
+            requests:
+              memory: 1Gi
           imagePullPolicy: Always
           ports:
             - containerPort: 9999

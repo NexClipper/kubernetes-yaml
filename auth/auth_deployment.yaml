@@ -17,6 +17,11 @@ spec:
       containers:
         - name: auth
           image: nexclipper/nex-oauth2:k8s-v0.1
+          resources:
+            limits:
+              memory: 1Gi
+            requests:
+              memory: 512Mi
           imagePullPolicy: Always
           ports:
             - containerPort: 8888
@@ -32,3 +37,5 @@ spec:
               value: "password"
             - name: PORT
               value: '8888'
+            - name: SEARCH_API_ENDPOINT
+              value: "search.nexclipper:10100"

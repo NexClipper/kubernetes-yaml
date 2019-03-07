@@ -17,17 +17,22 @@ spec:
       containers:
         - name: collector
           image: nexclipper/nexcollector:k8s-v0.1
+          resources:
+            limits:
+              memory: 1Gi
+            requests:
+              memory: 600Mi
           imagePullPolicy: Always
           ports:
             - containerPort: 9000
               name: collector
           env:
             - name: KAFKA_ZOOKEEPER
-              value: "kafka-zookeeper.kafka:2181"
+              value: "kafka-zookeeper.kafka-test-02:2181"
             - name: KAFKA_PORT
               value: '9092'
             - name: KAFKA_HOST
-              value: "kafka-kafka.kafka"
+              value: "kafka-kafka.kafka-test-02"
             - name: MYSQL_DBNAME
               value: "defaultdb"
             - name: MYSQL_URL

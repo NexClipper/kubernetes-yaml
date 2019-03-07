@@ -2,7 +2,7 @@
   kind: Deployment
   metadata:
     name: mysql
-    namespace: nexclipper
+    namespace: opensource
     labels:
       app: mysql
   spec:
@@ -36,5 +36,5 @@
         volumes:
         - name: mysql-data
           hostPath:
-            path: /nfs/mysql
+            path: /nfs/dev-test/mysql_opensource
   status: {}

@@ -17,6 +17,11 @@ spec:
       containers:
         - name: clusterapi
           image: nexclipper/mesos:k8s-v0.1
+          resources:
+            limits:
+              memory: 1537Mi
+            requests:
+              memory: 1024Mi
           imagePullPolicy: Always
           ports:
             - containerPort: 9000

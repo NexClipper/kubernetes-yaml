@@ -1,22 +1,22 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: fullfillment
+  name: collectorapi
   labels: 
-    app: fullfillment
+    app: collectorapi
     version: v1
-  namespace: nexclipper
+  namespace: opensource
 spec:
-  replicas: 1
+  replicas: 2
   template:
     metadata:
-      name: fullfillment
+      name: collectorapi
       labels:
-        app: fullfillment
+        app: collectorapi
     spec:
       containers:
-        - name: fullfillment
-          image: nexclipper/nexfullfillment:k8s-v0.1
+        - name: collectorapi
+          image: nexclipper/collectorapi:k8s
           resources:
             limits:
               memory: 2Gi
@@ -25,7 +25,7 @@ spec:
           imagePullPolicy: Always
           ports:
             - containerPort: 9000
-              name: fullfillment
+              name: collectorapi
           env:
             - name: KAFKA_ZOOKEEPER
               value: "kafka-zookeeper.kafka-test-02:2181"
@@ -36,18 +36,20 @@ spec:
             - name: MYSQL_DBNAME
               value: "defaultdb"
             - name: MYSQL_URL
-              value: "mysql.nexclipper:3306"
+              value: "mysql.opensource:3306"
             - name: MYSQL_PASSWORD
               value: "password"
             - name: MYSQL_USERNAME
               value: "admin"
-            - name: INFLUXDB_DATASOURCE
-              value: "nexclipper"
             - name: REDIS_HOST
-              value: redis.nexclipper
+              value: redis.opensource
             - name: REDIS_PORT
               value: '6379'
             - name: INFLUXDB_ENDPOINT
-              value: http://influx.nexclipper:8087
+              value: http://influx.opensource:8087
             - name: INFLUXDB_DATASOURCE
               value: nexclipper
+            - name: TDB
+              value: ALL
+            - name: PUSHGATEWAY_ENDPOINT
+              value: prometheus-h-pushgateway.prometheus:9091

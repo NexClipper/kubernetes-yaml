@@ -16,9 +16,9 @@ spec:
       - name: billing-meter
         resources:
           limits:
-            memory: 512Mi
+            memory: 1024Mi
           requests:
-            memory: 512Mi
+            memory: 1024Mi
 
         image: nexclipper/meter:v1
         imagePullPolicy: Always

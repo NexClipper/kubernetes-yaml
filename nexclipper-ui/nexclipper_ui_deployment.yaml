@@ -58,6 +58,6 @@ spec:
             - name: KILLBILL_IP
               value: "billing-kb.nexclipper"
             - name: SHINY_ENDPOINT
-              value: "https://ai.nexclipper.com"
+              value: "https://aikube.nexclipper.com"
             
             
