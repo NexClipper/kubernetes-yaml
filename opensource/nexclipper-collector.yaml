@@ -1,22 +1,22 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: collectorapi
+  name: nexclipper-colletor
   labels: 
-    app: collectorapi
+    app: nexclipper-colletor
     version: v1
-  namespace: opensource
+  namespace: nexclipper
 spec:
   replicas: 2
   template:
     metadata:
-      name: collectorapi
+      name: nexclipper-colletor
       labels:
-        app: collectorapi
+        app: nexclipper-colletor
     spec:
       containers:
-        - name: collectorapi
-          image: nexclipper/collectorapi:k8s
+        - name: nexclipper-colletor
+          image: nexclipper/nexcolletor:k8s
           resources:
             limits:
               memory: 2Gi
@@ -25,7 +25,7 @@ spec:
           imagePullPolicy: Always
           ports:
             - containerPort: 9000
-              name: collectorapi
+              name: collector
           env:
             - name: KAFKA_ZOOKEEPER
               value: "kafka-zookeeper.kafka-test-02:2181"
@@ -36,20 +36,46 @@ spec:
             - name: MYSQL_DBNAME
               value: "defaultdb"
             - name: MYSQL_URL
-              value: "mysql.opensource:3306"
+              value: "mysql.nexclipper:3306"
             - name: MYSQL_PASSWORD
               value: "password"
             - name: MYSQL_USERNAME
               value: "admin"
             - name: REDIS_HOST
-              value: redis.opensource
+              value: redis.nexclipper
             - name: REDIS_PORT
               value: '6379'
             - name: INFLUXDB_ENDPOINT
-              value: http://influx.opensource:8087
+              value: http://influx.nexclipper:8087
             - name: INFLUXDB_DATASOURCE
               value: nexclipper
             - name: TDB
-              value: ALL
+              value: INFLUX
             - name: PUSHGATEWAY_ENDPOINT
               value: prometheus-h-pushgateway.prometheus:9091
+            - name: BROKER
+              value: kafka
+            - name: RABBITMQ_HOST
+              value: 192.168.0.180
+            - name: RABBITMQ_PORT 
+              value: '31313'
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: nexclipper-colletor
+  labels:
+    app: nexclipper-colletor
+    version: v0.1
+  namespace: nexclipper
+spec:
+  type: NodePort
+  ports:
+  - port: 10100
+    protocol: TCP
+    targetPort: 9000
+    name: http
+  selector:
+    app: nexclipper-colletor

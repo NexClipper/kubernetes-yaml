@@ -1,31 +1,31 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: fullfillment
+  name: nexclipper-colletor-test
   labels: 
-    app: fullfillment
-    version: v1
-  namespace: nexclipper-saas
+    app: nexclipper-colletor
+  namespace: nexclipper
 spec:
-  replicas: 2
+  replicas: 3
   template:
     metadata:
-      name: fullfillment
+      name: nexclipper-colletor-test
       labels:
-        app: fullfillment
+        app: nexclipper-colletor
+        version: v1
     spec:
       containers:
-        - name: fullfillment
-          image: nexclipper/nexfullfillment:k8s-v0.1
+        - name: nexclipper-colletor
+          image: nexclipper/nexcolletor:k8s
           resources:
             limits:
-              memory: 2Gi
+              memory: 1Gi
             requests:
-              memory: 2Gi
+              memory: 512Mi
           imagePullPolicy: Always
           ports:
             - containerPort: 9000
-              name: fullfillment
+              name: collector
           env:
             - name: KAFKA_ZOOKEEPER
               value: "kafka-zookeeper.kafka-test-02:2181"
@@ -36,18 +36,30 @@ spec:
             - name: MYSQL_DBNAME
               value: "defaultdb"
             - name: MYSQL_URL
-              value: "mysql.nexclipper-saas:3306"
+              value: "mysql.nexclipper:3306"
             - name: MYSQL_PASSWORD
               value: "password"
             - name: MYSQL_USERNAME
               value: "admin"
-            - name: INFLUXDB_DATASOURCE
-              value: "nexclipper"
             - name: REDIS_HOST
-              value: redis.nexclipper-saas
+              value: redis.nexclipper
             - name: REDIS_PORT
               value: '6379'
             - name: INFLUXDB_ENDPOINT
-              value: http://influx.nexclipper-saas:8087
+              value: http://influx.nexclipper:8087
             - name: INFLUXDB_DATASOURCE
               value: nexclipper
+            - name: TDB
+              value: INFLUX
+            - name: PUSHGATEWAY_ENDPOINT
+              value: prometheus-h-pushgateway.prometheus:9091
+            - name: BROKER
+              value: rabbitmq
+            - name: RABBITMQ_HOST
+              value: rabbitmq.nexclipper
+            - name: RABBITMQ_PORT 
+              value: '5672'
+            - name: RABBITMQ_USER
+              value: guest
+            - name: RABBITMQ_PASSWORD
+              value: guest

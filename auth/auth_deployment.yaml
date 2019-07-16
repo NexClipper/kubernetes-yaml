@@ -5,7 +5,7 @@ metadata:
   labels: 
     app: auth
     version: v1
-  namespace: nexclipper
+  namespace: nexclipper-saas
 spec:
   replicas: 1
   template:
@@ -28,7 +28,7 @@ spec:
               name: auth
           env:
             - name: MYSQL_URL
-              value: "mysql.nexclipper"
+              value: "mysql.nexclipper-saas"
             - name: MYSQL_PORT
               value: '3306'
             - name: MYSQL_USERNAME
@@ -38,4 +38,4 @@ spec:
             - name: PORT
               value: '8888'
             - name: SEARCH_API_ENDPOINT
-              value: "search.nexclipper:10100"
+              value: "search.nexclipper-saas:10100"

@@ -5,7 +5,7 @@ metadata:
   labels: 
     app: search
     version: v1
-  namespace: nexclipper
+  namespace: nexclipper-saas
 spec:
   replicas: 1
   template:
@@ -28,11 +28,11 @@ spec:
               name: searchapi
           env:
             - name: INFLUXDB_ENDPOINT
-              value: "http://influx.nexclipper:8087"
+              value: "http://influx.nexclipper-saas:8087"
             - name: MYSQL_DBNAME
               value: "defaultdb"
             - name: MYSQL_URL
-              value: "mysql.nexclipper:3306"
+              value: "mysql.nexclipper-saas:3306"
             - name: MYSQL_PASSWORD
               value: "password"
             - name: MYSQL_USERNAME

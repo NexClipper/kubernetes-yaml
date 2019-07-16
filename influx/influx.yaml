@@ -2,7 +2,7 @@
   kind: Deployment
   metadata:
     name: influx
-    namespace: nexclipper
+    namespace: nexclipper-saas
     labels:
       app: influx
   spec:
@@ -31,5 +31,5 @@
         volumes:
         - name: influx-data
           hostPath:
-            path: /nfs/influx
+            path: /nfs/saas/influx
   status: {}

@@ -5,9 +5,9 @@ metadata:
   labels: 
     app: collector
     version: v1
-  namespace: nexclipper
+  namespace: nexclipper-saas
 spec:
-  replicas: 3
+  replicas: 2
   template:
     metadata:
       name: collector
@@ -36,7 +36,7 @@ spec:
             - name: MYSQL_DBNAME
               value: "defaultdb"
             - name: MYSQL_URL
-              value: "mysql.nexclipper:3306"
+              value: "mysql.nexclipper-saas:3306"
             - name: MYSQL_PASSWORD
               value: "password"
             - name: MYSQL_USERNAME
@@ -44,6 +44,6 @@ spec:
             - name: INFLUXDB_DATASOURCE
               value: "nexclipper"
             - name: REDIS_HOST
-              value: redis.nexclipper
+              value: redis.nexclipper-saas
             - name: REDIS_PORT
               value: '6379'

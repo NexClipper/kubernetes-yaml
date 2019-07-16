@@ -1,17 +1,18 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: workflowapi
+  name: nexclipper-collector
   labels: 
-    app: workflowapi
+    app: nexclipper-collector
     version: v0.1
-  namespace: opensource
+  namespace: nexclipper
 spec:
   type: NodePort
   ports:
   - port: 10100
     protocol: TCP
     targetPort: 9000
+    nodePort: 32100
     name: http
   selector:  
-    app: workflowapi
+    app: nexclipper-collector

@@ -2,7 +2,7 @@
   kind: Service
   metadata:
     name: redis
-    namespace: nexclipper
+    namespace: nexclipper-saas
   spec:
     ports:
     - name: "6379"

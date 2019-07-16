@@ -5,7 +5,7 @@ metadata:
   labels: 
     app: servicegate
     version: v1
-  namespace: nexclipper
+  namespace: nexclipper-saas
 spec:
   replicas: 1
   template:
@@ -36,10 +36,10 @@ spec:
           - name: NON_SERVICE_ID
             value: "/nexoauth2"
           - name: REDIS_HOST
-            value: redis.nexclipper
+            value: redis.nexclipper-saas
           - name: REDIS_PORT
             value: '6379'
           - name: EUREKA_ENDPOINT
-            value: "http://nexrouter.nexclipper:8770/eureka/"
+            value: "http://nexrouter.nexclipper-saas:8770/eureka/"
           - name: PROTOCOL
             value: "http"

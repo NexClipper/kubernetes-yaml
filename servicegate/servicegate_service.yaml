@@ -5,7 +5,7 @@ metadata:
   labels: 
     app: servicegate
     version: v0.1
-  namespace: nexclipper
+  namespace: nexclipper-saas
 spec:
   type: NodePort
   ports:

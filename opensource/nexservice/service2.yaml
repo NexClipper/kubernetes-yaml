@@ -1,17 +1,18 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: collectorapi
+  name: nexclipper-service2
   labels: 
-    app: collectorapi
+    app: nexclipper-service
     version: v0.1
-  namespace: opensource
+  namespace: nexclipper
 spec:
   type: NodePort
   ports:
-  - port: 10100
+  - port: 10180
     protocol: TCP
     targetPort: 9000
     name: http
   selector:  
-    app: collectorapi
+    app: nexclipper-service
+

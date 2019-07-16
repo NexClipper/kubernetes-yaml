@@ -5,8 +5,9 @@ metadata:
   labels: 
     app: auth
     version: v0.1
-  namespace: nexclipper
+  namespace: nexclipper-saas
 spec:
+  type: NodePort
   ports:
   - port: 10100
     protocol: TCP

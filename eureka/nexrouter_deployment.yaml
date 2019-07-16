@@ -5,7 +5,7 @@ metadata:
   labels: 
     app: nexrouter
     version: v1
-  namespace: nexclipper
+  namespace: nexclipper-saas
 spec:
   replicas: 1
   template:
@@ -34,8 +34,8 @@ spec:
             - name: CLUSTER_MODEL
               value: "K8S"
             - name: REDIS_HOST
-              value: "redis.nexclipper"
+              value: "redis.nexclipper-saas"
             - name: REDIS_PORT
               value: '6379'
             - name: ROUTER_DNS
-              value: "nexcloud_nexoauth2#auth.nexclipper:10100,nexcloud_nexclipperui#nexclipper-ui.nexclipper:10100,nexcloud_collector#collector.nexclipper:10100"
+              value: "nexcloud_nexoauth2#auth.nexclipper-saas:10100,nexcloud_nexclipperui#nexclipper-ui.nexclipper-saas:10100,nexcloud_collector#collector.nexclipper-saas:10100"

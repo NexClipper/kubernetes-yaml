@@ -1,17 +1,17 @@
 kind: ServiceAccount 
 apiVersion: v1 
 metadata: 
-  name: root-sa
-  namespace: nexclipperagent
+  name: root-saas
+  namespace: nexclipperagent-saas
 ---
 kind: ClusterRoleBinding 
 apiVersion: rbac.authorization.k8s.io/v1beta1
 metadata:
-  name: root-sa-kube-system-cluster-admin
+  name: root-saas-kube-system-cluster-admin
 subjects: 
 - kind: ServiceAccount 
-  name: root-sa 
-  namespace: nexclipperagent
+  name: root-saas
+  namespace: nexclipperagent-saas
 roleRef: 
   apiGroup: rbac.authorization.k8s.io 
   kind: ClusterRole 
@@ -21,7 +21,7 @@ apiVersion: extensions/v1beta1
 kind: DaemonSet
 metadata:
   name: nexclipper
-  namespace: nexclipperagent
+  namespace: nexclipperagent-saas
   labels:
     app: nexclipper
 spec:
@@ -72,9 +72,9 @@ spec:
           privileged: true
         env:
         - name: agent_key
-          value: d670dbfc-f98d-4595-ad3b-2aec5e227438
+          value: 2ec4619f-13a6-4336-bb62-3139b3266383
         - name: agent_endpoint
-          value: agent.nexclipper.com
+          value: 192.168.0.180:32511
         - name: k8s_apiserver_protocol
           value: https
         - name: k8s_apiserver_port
@@ -99,7 +99,7 @@ apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
   name: nexclipper-k8s
-  namespace: nexclipperagent
+  namespace: nexclipperagent-saas
   labels:
     app: nexclipper-k8s
 spec:
@@ -128,7 +128,7 @@ spec:
       - name: docker
         hostPath:
           path: /var/lib/docker
-      serviceAccount: root-sa
+      serviceAccount: root-saas
       hostNetwork: true
       hostPID: true
       hostIPC: true
@@ -145,9 +145,9 @@ spec:
           privileged: true
         env:
         - name: agent_key
-          value: d670dbfc-f98d-4595-ad3b-2aec5e227438
+          value: 2ec4619f-13a6-4336-bb62-3139b3266383
         - name: agent_endpoint
-          value: agent.nexclipper.com
+          value: 192.168.0.180:32511
         - name: k8s_apiserver_protocol
           value: https
         - name: k8s_cluster_provider

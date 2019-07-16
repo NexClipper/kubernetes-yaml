@@ -1,0 +1,644 @@
+.:53
+2019-03-11T01:09:17.08Z [INFO] CoreDNS-1.2.6
+2019-03-11T01:09:17.08Z [INFO] linux/amd64, go1.11.2, 756749c
+CoreDNS-1.2.6
+linux/amd64, go1.11.2, 756749c
+ [INFO] plugin/reload: Running configuration MD5 = f65c4821c8a9b7b5eb30fa4fbc167769
+E0315 01:42:09.273341       1 reflector.go:322] github.com/coredns/coredns/plugin/kubernetes/controller.go:318: Failed to watch *v1.Namespace: the server has asked for the client to provide credentials (get namespaces)
+E0315 01:42:11.804449       1 reflector.go:322] github.com/coredns/coredns/plugin/kubernetes/controller.go:313: Failed to watch *v1.Endpoints: the server has asked for the client to provide credentials (get endpoints)
+E0315 01:43:10.249283       1 reflector.go:322] github.com/coredns/coredns/plugin/kubernetes/controller.go:311: Failed to watch *v1.Service: the server has asked for the client to provide credentials (get services)
+E0315 01:43:10.275329       1 reflector.go:205] github.com/coredns/coredns/plugin/kubernetes/controller.go:318: Failed to list *v1.Namespace: the server was unable to return a response in the time allotted, but may still be processing the request (get namespaces)
+E0315 01:43:12.806491       1 reflector.go:205] github.com/coredns/coredns/plugin/kubernetes/controller.go:313: Failed to list *v1.Endpoints: the server was unable to return a response in the time allotted, but may still be processing the request (get endpoints)
+E0315 01:43:19.778021       1 reflector.go:205] github.com/coredns/coredns/plugin/kubernetes/controller.go:313: Failed to list *v1.Endpoints: Get https://10.96.0.1:443/api/v1/endpoints?limit=500&resourceVersion=0: http2: server sent GOAWAY and closed the connection; LastStreamID=4671, ErrCode=NO_ERROR, debug=""
+E0315 01:43:19.778128       1 reflector.go:205] github.com/coredns/coredns/plugin/kubernetes/controller.go:311: Failed to list *v1.Service: Get https://10.96.0.1:443/api/v1/services?limit=500&resourceVersion=0: http2: server sent GOAWAY and closed the connection; LastStreamID=4671, ErrCode=NO_ERROR, debug=""
+E0315 01:43:19.778212       1 reflector.go:205] github.com/coredns/coredns/plugin/kubernetes/controller.go:318: Failed to list *v1.Namespace: Get https://10.96.0.1:443/api/v1/namespaces?limit=500&resourceVersion=0: http2: server sent GOAWAY and closed the connection; LastStreamID=4671, ErrCode=NO_ERROR, debug=""
+E0315 01:43:20.778866       1 reflector.go:205] github.com/coredns/coredns/plugin/kubernetes/controller.go:313: Failed to list *v1.Endpoints: Get https://10.96.0.1:443/api/v1/endpoints?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: connect: connection refused
+E0315 01:43:20.782800       1 reflector.go:205] github.com/coredns/coredns/plugin/kubernetes/controller.go:311: Failed to list *v1.Service: Get https://10.96.0.1:443/api/v1/services?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: connect: connection refused
+E0315 01:43:20.786978       1 reflector.go:205] github.com/coredns/coredns/plugin/kubernetes/controller.go:318: Failed to list *v1.Namespace: Get https://10.96.0.1:443/api/v1/namespaces?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: connect: connection refused
+E0315 01:43:21.779840       1 reflector.go:205] github.com/coredns/coredns/plugin/kubernetes/controller.go:313: Failed to list *v1.Endpoints: Get https://10.96.0.1:443/api/v1/endpoints?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: connect: connection refused
+E0315 01:43:21.783335       1 reflector.go:205] github.com/coredns/coredns/plugin/kubernetes/controller.go:311: Failed to list *v1.Service: Get https://10.96.0.1:443/api/v1/services?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: connect: connection refused
+E0315 01:43:21.787933       1 reflector.go:205] github.com/coredns/coredns/plugin/kubernetes/controller.go:318: Failed to list *v1.Namespace: Get https://10.96.0.1:443/api/v1/namespaces?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: connect: connection refused
+E0315 01:43:22.780857       1 reflector.go:205] github.com/coredns/coredns/plugin/kubernetes/controller.go:313: Failed to list *v1.Endpoints: Get https://10.96.0.1:443/api/v1/endpoints?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: connect: connection refused
+E0315 01:43:22.784043       1 reflector.go:205] github.com/coredns/coredns/plugin/kubernetes/controller.go:311: Failed to list *v1.Service: Get https://10.96.0.1:443/api/v1/services?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: connect: connection refused
+E0315 01:43:22.788627       1 reflector.go:205] github.com/coredns/coredns/plugin/kubernetes/controller.go:318: Failed to list *v1.Namespace: Get https://10.96.0.1:443/api/v1/namespaces?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: connect: connection refused
+E0315 01:43:23.781399       1 reflector.go:205] github.com/coredns/coredns/plugin/kubernetes/controller.go:313: Failed to list *v1.Endpoints: Get https://10.96.0.1:443/api/v1/endpoints?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: connect: connection refused
+E0315 01:43:23.784495       1 reflector.go:205] github.com/coredns/coredns/plugin/kubernetes/controller.go:311: Failed to list *v1.Service: Get https://10.96.0.1:443/api/v1/services?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: connect: connection refused
+E0315 01:43:23.789029       1 reflector.go:205] github.com/coredns/coredns/plugin/kubernetes/controller.go:318: Failed to list *v1.Namespace: Get https://10.96.0.1:443/api/v1/namespaces?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: connect: connection refused
+E0315 01:43:24.782276       1 reflector.go:205] github.com/coredns/coredns/plugin/kubernetes/controller.go:313: Failed to list *v1.Endpoints: Get https://10.96.0.1:443/api/v1/endpoints?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: connect: connection refused
+E0315 01:43:24.785433       1 reflector.go:205] github.com/coredns/coredns/plugin/kubernetes/controller.go:311: Failed to list *v1.Service: Get https://10.96.0.1:443/api/v1/services?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: connect: connection refused
+E0315 01:43:24.790040       1 reflector.go:205] github.com/coredns/coredns/plugin/kubernetes/controller.go:318: Failed to list *v1.Namespace: Get https://10.96.0.1:443/api/v1/namespaces?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: connect: connection refused
+E0315 01:43:25.786113       1 reflector.go:205] github.com/coredns/coredns/plugin/kubernetes/controller.go:311: Failed to list *v1.Service: Get https://10.96.0.1:443/api/v1/services?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: connect: connection refused
+E0315 01:43:25.787044       1 reflector.go:205] github.com/coredns/coredns/plugin/kubernetes/controller.go:313: Failed to list *v1.Endpoints: Get https://10.96.0.1:443/api/v1/endpoints?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: connect: connection refused
+E0315 01:43:25.790806       1 reflector.go:205] github.com/coredns/coredns/plugin/kubernetes/controller.go:318: Failed to list *v1.Namespace: Get https://10.96.0.1:443/api/v1/namespaces?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: connect: connection refused
+E0315 01:43:26.787058       1 reflector.go:205] github.com/coredns/coredns/plugin/kubernetes/controller.go:311: Failed to list *v1.Service: Get https://10.96.0.1:443/api/v1/services?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: connect: connection refused
+E0315 01:43:26.788001       1 reflector.go:205] github.com/coredns/coredns/plugin/kubernetes/controller.go:313: Failed to list *v1.Endpoints: Get https://10.96.0.1:443/api/v1/endpoints?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: connect: connection refused
+E0315 01:43:26.791312       1 reflector.go:205] github.com/coredns/coredns/plugin/kubernetes/controller.go:318: Failed to list *v1.Namespace: Get https://10.96.0.1:443/api/v1/namespaces?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: connect: connection refused
+E0315 01:43:27.787626       1 reflector.go:205] github.com/coredns/coredns/plugin/kubernetes/controller.go:311: Failed to list *v1.Service: Get https://10.96.0.1:443/api/v1/services?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: connect: connection refused
+E0315 01:43:27.789037       1 reflector.go:205] github.com/coredns/coredns/plugin/kubernetes/controller.go:313: Failed to list *v1.Endpoints: Get https://10.96.0.1:443/api/v1/endpoints?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: connect: connection refused
+E0315 01:43:27.791953       1 reflector.go:205] github.com/coredns/coredns/plugin/kubernetes/controller.go:318: Failed to list *v1.Namespace: Get https://10.96.0.1:443/api/v1/namespaces?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: connect: connection refused
+E0315 01:43:28.788221       1 reflector.go:205] github.com/coredns/coredns/plugin/kubernetes/controller.go:311: Failed to list *v1.Service: Get https://10.96.0.1:443/api/v1/services?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: connect: connection refused
+E0315 01:43:28.789511       1 reflector.go:205] github.com/coredns/coredns/plugin/kubernetes/controller.go:313: Failed to list *v1.Endpoints: Get https://10.96.0.1:443/api/v1/endpoints?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: connect: connection refused
+E0315 01:43:28.792553       1 reflector.go:205] github.com/coredns/coredns/plugin/kubernetes/controller.go:318: Failed to list *v1.Namespace: Get https://10.96.0.1:443/api/v1/namespaces?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: connect: connection refused
+E0315 01:43:29.789215       1 reflector.go:205] github.com/coredns/coredns/plugin/kubernetes/controller.go:311: Failed to list *v1.Service: Get https://10.96.0.1:443/api/v1/services?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: connect: connection refused
+E0315 01:43:29.790240       1 reflector.go:205] github.com/coredns/coredns/plugin/kubernetes/controller.go:313: Failed to list *v1.Endpoints: Get https://10.96.0.1:443/api/v1/endpoints?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: connect: connection refused
+E0315 01:43:29.793235       1 reflector.go:205] github.com/coredns/coredns/plugin/kubernetes/controller.go:318: Failed to list *v1.Namespace: Get https://10.96.0.1:443/api/v1/namespaces?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: connect: connection refused
+E0315 01:43:30.789831       1 reflector.go:205] github.com/coredns/coredns/plugin/kubernetes/controller.go:311: Failed to list *v1.Service: Get https://10.96.0.1:443/api/v1/services?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: connect: connection refused
+E0315 01:43:30.790740       1 reflector.go:205] github.com/coredns/coredns/plugin/kubernetes/controller.go:313: Failed to list *v1.Endpoints: Get https://10.96.0.1:443/api/v1/endpoints?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: connect: connection refused
+E0315 01:43:30.793919       1 reflector.go:205] github.com/coredns/coredns/plugin/kubernetes/controller.go:318: Failed to list *v1.Namespace: Get https://10.96.0.1:443/api/v1/namespaces?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: connect: connection refused
+E0315 01:43:31.790487       1 reflector.go:205] github.com/coredns/coredns/plugin/kubernetes/controller.go:311: Failed to list *v1.Service: Get https://10.96.0.1:443/api/v1/services?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: connect: connection refused
+E0315 01:43:31.791360       1 reflector.go:205] github.com/coredns/coredns/plugin/kubernetes/controller.go:313: Failed to list *v1.Endpoints: Get https://10.96.0.1:443/api/v1/endpoints?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: connect: connection refused
+E0315 01:43:31.794642       1 reflector.go:205] github.com/coredns/coredns/plugin/kubernetes/controller.go:318: Failed to list *v1.Namespace: Get https://10.96.0.1:443/api/v1/namespaces?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: connect: connection refused
+E0315 01:43:32.791368       1 reflector.go:205] github.com/coredns/coredns/plugin/kubernetes/controller.go:311: Failed to list *v1.Service: Get https://10.96.0.1:443/api/v1/services?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: connect: connection refused
+E0315 01:43:32.792336       1 reflector.go:205] github.com/coredns/coredns/plugin/kubernetes/controller.go:313: Failed to list *v1.Endpoints: Get https://10.96.0.1:443/api/v1/endpoints?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: connect: connection refused
+E0315 01:43:32.795342       1 reflector.go:205] github.com/coredns/coredns/plugin/kubernetes/controller.go:318: Failed to list *v1.Namespace: Get https://10.96.0.1:443/api/v1/namespaces?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: connect: connection refused
+E0315 01:43:33.792207       1 reflector.go:205] github.com/coredns/coredns/plugin/kubernetes/controller.go:311: Failed to list *v1.Service: Get https://10.96.0.1:443/api/v1/services?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: connect: connection refused
+E0315 01:43:33.793136       1 reflector.go:205] github.com/coredns/coredns/plugin/kubernetes/controller.go:313: Failed to list *v1.Endpoints: Get https://10.96.0.1:443/api/v1/endpoints?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: connect: connection refused
+E0315 01:43:33.796035       1 reflector.go:205] github.com/coredns/coredns/plugin/kubernetes/controller.go:318: Failed to list *v1.Namespace: Get https://10.96.0.1:443/api/v1/namespaces?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: connect: connection refused
+E0315 01:43:34.793036       1 reflector.go:205] github.com/coredns/coredns/plugin/kubernetes/controller.go:311: Failed to list *v1.Service: Get https://10.96.0.1:443/api/v1/services?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: connect: connection refused
+E0315 01:43:34.794195       1 reflector.go:205] github.com/coredns/coredns/plugin/kubernetes/controller.go:313: Failed to list *v1.Endpoints: Get https://10.96.0.1:443/api/v1/endpoints?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: connect: connection refused
+E0315 01:43:34.796784       1 reflector.go:205] github.com/coredns/coredns/plugin/kubernetes/controller.go:318: Failed to list *v1.Namespace: Get https://10.96.0.1:443/api/v1/namespaces?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: connect: connection refused
+E0315 01:43:35.793935       1 reflector.go:205] github.com/coredns/coredns/plugin/kubernetes/controller.go:311: Failed to list *v1.Service: Get https://10.96.0.1:443/api/v1/services?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: connect: connection refused
+E0315 01:43:35.795003       1 reflector.go:205] github.com/coredns/coredns/plugin/kubernetes/controller.go:313: Failed to list *v1.Endpoints: Get https://10.96.0.1:443/api/v1/endpoints?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: connect: connection refused
+E0315 01:43:35.797716       1 reflector.go:205] github.com/coredns/coredns/plugin/kubernetes/controller.go:318: Failed to list *v1.Namespace: Get https://10.96.0.1:443/api/v1/namespaces?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: connect: connection refused
+E0315 01:43:36.794778       1 reflector.go:205] github.com/coredns/coredns/plugin/kubernetes/controller.go:311: Failed to list *v1.Service: Get https://10.96.0.1:443/api/v1/services?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: connect: connection refused
+E0315 01:43:36.796087       1 reflector.go:205] github.com/coredns/coredns/plugin/kubernetes/controller.go:313: Failed to list *v1.Endpoints: Get https://10.96.0.1:443/api/v1/endpoints?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: connect: connection refused
+E0315 01:43:36.798552       1 reflector.go:205] github.com/coredns/coredns/plugin/kubernetes/controller.go:318: Failed to list *v1.Namespace: Get https://10.96.0.1:443/api/v1/namespaces?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: connect: connection refused
+E0315 01:43:37.795381       1 reflector.go:205] github.com/coredns/coredns/plugin/kubernetes/controller.go:311: Failed to list *v1.Service: Get https://10.96.0.1:443/api/v1/services?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: connect: connection refused
+E0315 01:43:37.796945       1 reflector.go:205] github.com/coredns/coredns/plugin/kubernetes/controller.go:313: Failed to list *v1.Endpoints: Get https://10.96.0.1:443/api/v1/endpoints?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: connect: connection refused
+E0315 01:43:37.799261       1 reflector.go:205] github.com/coredns/coredns/plugin/kubernetes/controller.go:318: Failed to list *v1.Namespace: Get https://10.96.0.1:443/api/v1/namespaces?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: connect: connection refused
+E0315 01:43:38.796224       1 reflector.go:205] github.com/coredns/coredns/plugin/kubernetes/controller.go:311: Failed to list *v1.Service: Get https://10.96.0.1:443/api/v1/services?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: connect: connection refused
+E0315 01:43:38.797551       1 reflector.go:205] github.com/coredns/coredns/plugin/kubernetes/controller.go:313: Failed to list *v1.Endpoints: Get https://10.96.0.1:443/api/v1/endpoints?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: connect: connection refused
+E0315 01:43:38.799814       1 reflector.go:205] github.com/coredns/coredns/plugin/kubernetes/controller.go:318: Failed to list *v1.Namespace: Get https://10.96.0.1:443/api/v1/namespaces?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: connect: connection refused
+E0315 01:43:39.797129       1 reflector.go:205] github.com/coredns/coredns/plugin/kubernetes/controller.go:311: Failed to list *v1.Service: Get https://10.96.0.1:443/api/v1/services?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: connect: connection refused
+E0315 01:43:39.798252       1 reflector.go:205] github.com/coredns/coredns/plugin/kubernetes/controller.go:313: Failed to list *v1.Endpoints: Get https://10.96.0.1:443/api/v1/endpoints?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: connect: connection refused
+E0315 01:43:39.800532       1 reflector.go:205] github.com/coredns/coredns/plugin/kubernetes/controller.go:318: Failed to list *v1.Namespace: Get https://10.96.0.1:443/api/v1/namespaces?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: connect: connection refused
+E0315 01:43:40.798079       1 reflector.go:205] github.com/coredns/coredns/plugin/kubernetes/controller.go:311: Failed to list *v1.Service: Get https://10.96.0.1:443/api/v1/services?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: connect: connection refused
+E0315 01:43:40.798993       1 reflector.go:205] github.com/coredns/coredns/plugin/kubernetes/controller.go:313: Failed to list *v1.Endpoints: Get https://10.96.0.1:443/api/v1/endpoints?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: connect: connection refused
+E0315 01:43:40.801064       1 reflector.go:205] github.com/coredns/coredns/plugin/kubernetes/controller.go:318: Failed to list *v1.Namespace: Get https://10.96.0.1:443/api/v1/namespaces?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: connect: connection refused
+E0315 01:43:41.798631       1 reflector.go:205] github.com/coredns/coredns/plugin/kubernetes/controller.go:311: Failed to list *v1.Service: Get https://10.96.0.1:443/api/v1/services?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: connect: connection refused
+E0315 01:43:41.799664       1 reflector.go:205] github.com/coredns/coredns/plugin/kubernetes/controller.go:313: Failed to list *v1.Endpoints: Get https://10.96.0.1:443/api/v1/endpoints?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: connect: connection refused
+E0315 01:43:41.801632       1 reflector.go:205] github.com/coredns/coredns/plugin/kubernetes/controller.go:318: Failed to list *v1.Namespace: Get https://10.96.0.1:443/api/v1/namespaces?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: connect: connection refused
+E0315 01:43:42.799362       1 reflector.go:205] github.com/coredns/coredns/plugin/kubernetes/controller.go:311: Failed to list *v1.Service: Get https://10.96.0.1:443/api/v1/services?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: connect: connection refused
+E0315 01:43:42.800216       1 reflector.go:205] github.com/coredns/coredns/plugin/kubernetes/controller.go:313: Failed to list *v1.Endpoints: Get https://10.96.0.1:443/api/v1/endpoints?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: connect: connection refused
+E0315 01:43:42.802317       1 reflector.go:205] github.com/coredns/coredns/plugin/kubernetes/controller.go:318: Failed to list *v1.Namespace: Get https://10.96.0.1:443/api/v1/namespaces?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: connect: connection refused
+E0315 01:45:17.776461       1 streamwatcher.go:109] Unable to decode an event from the watch stream: http2: server sent GOAWAY and closed the connection; LastStreamID=11, ErrCode=NO_ERROR, debug=""
+E0315 01:45:17.777340       1 streamwatcher.go:109] Unable to decode an event from the watch stream: http2: server sent GOAWAY and closed the connection; LastStreamID=11, ErrCode=NO_ERROR, debug=""
+E0315 01:45:17.777584       1 streamwatcher.go:109] Unable to decode an event from the watch stream: http2: server sent GOAWAY and closed the connection; LastStreamID=11, ErrCode=NO_ERROR, debug=""
+E0315 01:45:17.777932       1 reflector.go:322] github.com/coredns/coredns/plugin/kubernetes/controller.go:313: Failed to watch *v1.Endpoints: Get https://10.96.0.1:443/api/v1/endpoints?resourceVersion=3412681&timeoutSeconds=404&watch=true: dial tcp 10.96.0.1:443: connect: connection refused
+E0315 01:45:17.778001       1 reflector.go:322] github.com/coredns/coredns/plugin/kubernetes/controller.go:318: Failed to watch *v1.Namespace: Get https://10.96.0.1:443/api/v1/namespaces?resourceVersion=3412588&timeoutSeconds=588&watch=true: dial tcp 10.96.0.1:443: connect: connection refused
+E0315 01:45:17.778066       1 reflector.go:322] github.com/coredns/coredns/plugin/kubernetes/controller.go:311: Failed to watch *v1.Service: Get https://10.96.0.1:443/api/v1/services?resourceVersion=3412588&timeoutSeconds=312&watch=true: dial tcp 10.96.0.1:443: connect: connection refused
+E0315 01:45:18.778772       1 reflector.go:205] github.com/coredns/coredns/plugin/kubernetes/controller.go:313: Failed to list *v1.Endpoints: Get https://10.96.0.1:443/api/v1/endpoints?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: connect: connection refused
+E0315 01:45:18.781654       1 reflector.go:205] github.com/coredns/coredns/plugin/kubernetes/controller.go:318: Failed to list *v1.Namespace: Get https://10.96.0.1:443/api/v1/namespaces?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: connect: connection refused
+E0315 01:45:18.783054       1 reflector.go:205] github.com/coredns/coredns/plugin/kubernetes/controller.go:311: Failed to list *v1.Service: Get https://10.96.0.1:443/api/v1/services?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: connect: connection refused
+E0315 01:45:19.779399       1 reflector.go:205] github.com/coredns/coredns/plugin/kubernetes/controller.go:313: Failed to list *v1.Endpoints: Get https://10.96.0.1:443/api/v1/endpoints?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: connect: connection refused
+E0315 01:45:19.782787       1 reflector.go:205] github.com/coredns/coredns/plugin/kubernetes/controller.go:318: Failed to list *v1.Namespace: Get https://10.96.0.1:443/api/v1/namespaces?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: connect: connection refused
+E0315 01:45:19.783687       1 reflector.go:205] github.com/coredns/coredns/plugin/kubernetes/controller.go:311: Failed to list *v1.Service: Get https://10.96.0.1:443/api/v1/services?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: connect: connection refused
+E0315 01:45:20.780439       1 reflector.go:205] github.com/coredns/coredns/plugin/kubernetes/controller.go:313: Failed to list *v1.Endpoints: Get https://10.96.0.1:443/api/v1/endpoints?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: connect: connection refused
+E0315 01:45:20.783471       1 reflector.go:205] github.com/coredns/coredns/plugin/kubernetes/controller.go:318: Failed to list *v1.Namespace: Get https://10.96.0.1:443/api/v1/namespaces?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: connect: connection refused
+E0315 01:45:20.784427       1 reflector.go:205] github.com/coredns/coredns/plugin/kubernetes/controller.go:311: Failed to list *v1.Service: Get https://10.96.0.1:443/api/v1/services?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: connect: connection refused
+E0315 01:45:21.781415       1 reflector.go:205] github.com/coredns/coredns/plugin/kubernetes/controller.go:313: Failed to list *v1.Endpoints: Get https://10.96.0.1:443/api/v1/endpoints?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: connect: connection refused
+E0315 01:45:21.784242       1 reflector.go:205] github.com/coredns/coredns/plugin/kubernetes/controller.go:318: Failed to list *v1.Namespace: Get https://10.96.0.1:443/api/v1/namespaces?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: connect: connection refused
+E0315 01:45:21.785322       1 reflector.go:205] github.com/coredns/coredns/plugin/kubernetes/controller.go:311: Failed to list *v1.Service: Get https://10.96.0.1:443/api/v1/services?limit=500&resourceVersion=0: dial tcp 10.96.0.1:443: connect: connection refused
+W0329 09:00:11.005886       1 reflector.go:341] github.com/coredns/coredns/plugin/kubernetes/controller.go:318: watch of *v1.Namespace ended with: too old resource version: 4536914 (5687318)
+W0329 09:00:11.168241       1 reflector.go:341] github.com/coredns/coredns/plugin/kubernetes/controller.go:311: watch of *v1.Service ended with: too old resource version: 5048244 (5687318)
+[INFO] Reloading
+ [INFO] plugin/reload: Running configuration MD5 = 2394cf331ea25e9aacc36ddf69fafcdb
+[INFO] Reloading complete
+2019-04-12T01:51:25.385Z [INFO] 127.0.0.1:35228 - 55534 "HINFO IN 5171397261279422355.2228949061298675608. udp 57 false 512" NXDOMAIN qr,rd,ra 133 0.073165194s
+2019-04-12T01:51:27.739Z [INFO] 10.244.6.154:33045 - 59924 "A IN redis.nexclipper.nexclipper.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,aa,rd,ra 156 0.000282171s
+2019-04-12T01:51:27.747Z [INFO] 10.244.6.154:32902 - 46996 "A IN redis.nexclipper.svc.cluster.local. udp 52 false 512" NOERROR qr,aa,rd,ra 102 0.00027028s
+2019-04-12T01:51:29.488Z [INFO] 10.244.6.154:44414 - 22238 "A IN influx.nexclipper.svc.cluster.local. udp 53 false 512" NOERROR qr,aa,rd,ra 104 0.0002198s
+2019-04-12T01:51:37.493Z [INFO] 10.244.6.155:41399 - 60749 "A IN redis.nexclipper.nexclipper.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,rd,ra 156 0.000184234s
+2019-04-12T01:51:44.766Z [INFO] 10.244.3.95:57368 - 62911 "A IN nexrouter.nexclipper-saas.svc.cluster.local. udp 61 false 512" NOERROR qr,aa,rd,ra 120 0.000201438s
+2019-04-12T01:51:49.919Z [INFO] 10.244.5.93:35583 - 7903 "A IN nexrouter.nexclipper-saas.nexclipper-saas.svc.cluster.local. udp 77 false 512" NXDOMAIN qr,aa,rd,ra 170 0.000401173s
+2019-04-12T01:51:49.955Z [INFO] 10.244.5.93:37626 - 11206 "A IN nexrouter.nexclipper-saas.svc.cluster.local. udp 61 false 512" NOERROR qr,aa,rd,ra 120 0.000375269s
+2019-04-12T01:51:56.056Z [INFO] 10.244.4.241:57332 - 54942 "A IN redis.nexclipper.nexclipper.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,rd,ra 156 0.000232873s
+2019-04-12T01:51:56.071Z [INFO] 10.244.4.241:59795 - 45001 "A IN redis.nexclipper.svc.cluster.local. udp 52 false 512" NOERROR qr,aa,rd,ra 102 0.000267114s
+2019-04-12T01:52:03.992Z [INFO] 10.244.5.97:59851 - 49372 "A IN www.nexclipper.com.nexclipper-saas.svc.cluster.local. udp 70 false 512" NXDOMAIN qr,aa,rd,ra 163 0.00036111s
+2019-04-12T01:52:04.658Z [INFO] 10.244.5.97:47693 - 2716 "A IN www.nexcloud.co.kr.nexclipper-saas.svc.cluster.local. udp 70 false 512" NXDOMAIN qr,aa,rd,ra 163 0.000375903s
+2019-04-12T01:52:04.68Z [INFO] 10.244.5.97:56945 - 43842 "A IN www.nexcloud.co.kr.svc.cluster.local. udp 54 false 512" NXDOMAIN qr,aa,rd,ra 147 0.000289902s
+2019-04-12T01:52:04.781Z [INFO] 10.244.5.97:42867 - 17070 "A IN www.nexcloud.co.kr. udp 36 false 512" NOERROR qr,rd,ra 112 0.066385853s
+2019-04-12T01:52:05.008Z [INFO] 10.244.5.97:46004 - 65312 "A IN server.nexclipper.com.nexclipper-saas.svc.cluster.local. udp 73 false 512" NXDOMAIN qr,aa,rd,ra 166 0.000230751s
+2019-04-12T01:52:05.026Z [INFO] 10.244.5.97:35764 - 26218 "A IN server.nexclipper.com.svc.cluster.local. udp 57 false 512" NXDOMAIN qr,aa,rd,ra 150 0.000212887s
+2019-04-12T01:52:05.17Z [INFO] 10.244.5.97:39991 - 48965 "A IN server.nexclipper.com.cluster.local. udp 53 false 512" NXDOMAIN qr,aa,rd,ra 146 0.000200021s
+2019-04-12T01:52:06.588Z [INFO] 10.244.5.97:59029 - 26401 "A IN www.facebook.com.svc.cluster.local. udp 52 false 512" NXDOMAIN qr,aa,rd,ra 145 0.000201761s
+2019-04-12T01:52:06.695Z [INFO] 10.244.5.97:58761 - 52163 "A IN www.facebook.com. udp 34 false 512" NOERROR qr,rd,ra 134 0.087938633s
+2019-04-12T01:52:12.345Z [INFO] 10.244.6.155:44474 - 50640 "A IN redis.nexclipper.nexclipper.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,aa,rd,ra 156 0.000383123s
+2019-04-12T01:52:12.347Z [INFO] 10.244.6.155:43668 - 50390 "A IN redis.nexclipper.svc.cluster.local. udp 52 false 512" NOERROR qr,aa,rd,ra 102 0.000287134s
+2019-04-12T01:52:14.83Z [INFO] 10.244.3.95:36550 - 33081 "A IN nexrouter.nexclipper-saas.nexclipper-saas.svc.cluster.local. udp 77 false 512" NXDOMAIN qr,rd,ra 170 0.000212433s
+2019-04-12T01:52:18.541Z [INFO] 10.244.6.148:40799 - 7405 "AAAA IN alertmanager-operated.cattle-prometheus.cattle-prometheus.svc.cluster.local. udp 93 false 512" NXDOMAIN qr,aa,rd,ra 186 0.000193382s
+2019-04-12T01:52:18.958Z [INFO] 10.244.6.148:37133 - 23252 "A IN alertmanager-operated.cattle-prometheus. udp 57 false 512" NXDOMAIN qr,rd,ra 133 0.064634582s
+2019-04-12T01:52:18.96Z [INFO] 10.244.6.148:45338 - 53131 "AAAA IN alertmanager-operated.cattle-prometheus. udp 57 false 512" NXDOMAIN qr,rd,ra 133 0.066772913s
+2019-04-12T01:52:19.962Z [INFO] 10.244.5.93:59289 - 9439 "A IN nexrouter.nexclipper-saas.nexclipper-saas.svc.cluster.local. udp 77 false 512" NXDOMAIN qr,aa,rd,ra 170 0.000277975s
+2019-04-12T01:52:19.968Z [INFO] 10.244.5.93:57784 - 29602 "A IN nexrouter.nexclipper-saas.svc.cluster.local. udp 61 false 512" NOERROR qr,aa,rd,ra 120 0.000209138s
+2019-04-12T01:52:23.264Z [INFO] 10.244.2.112:46140 - 47447 "A IN mysql.nexclipper-saas.nexclipper-saas.svc.cluster.local. udp 73 false 512" NXDOMAIN qr,aa,rd,ra 166 0.000379703s
+2019-04-12T01:52:23.265Z [INFO] 10.244.2.112:52083 - 40711 "A IN mysql.nexclipper-saas.svc.cluster.local. udp 57 false 512" NOERROR qr,aa,rd,ra 112 0.000317828s
+2019-04-12T01:52:28.444Z [INFO] 10.244.3.95:34449 - 31656 "A IN collector.nexclipper-saas.svc.cluster.local. udp 61 false 512" NOERROR qr,aa,rd,ra 120 0.00018327s
+2019-04-12T01:52:28.473Z [INFO] 10.244.6.154:55196 - 14975 "A IN redis.nexclipper.svc.cluster.local. udp 52 false 512" NOERROR qr,aa,rd,ra 102 0.000176647s
+2019-04-12T01:52:29.898Z [INFO] 10.244.2.112:55664 - 30981 "A IN redis.nexclipper-saas.nexclipper-saas.svc.cluster.local. udp 73 false 512" NXDOMAIN qr,aa,rd,ra 166 0.000278751s
+2019-04-12T01:52:35.595Z [INFO] 10.244.4.241:42720 - 54270 "A IN redis.nexclipper.nexclipper.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,rd,ra 156 0.000243281s
+2019-04-12T01:52:35.596Z [INFO] 10.244.4.241:41946 - 17562 "A IN redis.nexclipper.svc.cluster.local. udp 52 false 512" NOERROR qr,aa,rd,ra 102 0.000174422s
+2019-04-12T01:52:44.953Z [INFO] 10.244.3.95:54489 - 54722 "A IN nexrouter.nexclipper-saas.nexclipper-saas.svc.cluster.local. udp 77 false 512" NXDOMAIN qr,rd,ra 170 0.000149282s
+2019-04-12T01:52:44.954Z [INFO] 10.244.3.95:40678 - 22991 "A IN nexrouter.nexclipper-saas.svc.cluster.local. udp 61 false 512" NOERROR qr,aa,rd,ra 120 0.000241712s
+2019-04-12T01:52:47.492Z [INFO] 10.244.6.155:59399 - 28555 "A IN redis.nexclipper.nexclipper.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,aa,rd,ra 156 0.000234387s
+2019-04-12T01:52:47.493Z [INFO] 10.244.6.155:40280 - 47560 "A IN redis.nexclipper.svc.cluster.local. udp 52 false 512" NOERROR qr,aa,rd,ra 102 0.000185586s
+2019-04-12T01:52:50.027Z [INFO] 10.244.5.93:56159 - 13321 "A IN nexrouter.nexclipper-saas.svc.cluster.local. udp 61 false 512" NOERROR qr,aa,rd,ra 120 0.000289414s
+2019-04-12T01:53:03.994Z [INFO] 10.244.5.97:57988 - 45190 "A IN www.nexclipper.com.nexclipper-saas.svc.cluster.local. udp 70 false 512" NXDOMAIN qr,aa,rd,ra 163 0.000317409s
+2019-04-12T01:53:03.996Z [INFO] 10.244.5.97:33787 - 17742 "A IN www.nexclipper.com.svc.cluster.local. udp 54 false 512" NXDOMAIN qr,aa,rd,ra 147 0.000290431s
+2019-04-12T01:53:04.278Z [INFO] 10.244.5.97:33576 - 39347 "A IN www.nexcloud.co.kr. udp 36 false 512" NOERROR qr,rd,ra 112 0.031626945s
+2019-04-12T01:53:05.794Z [INFO] 10.244.4.241:54184 - 57857 "A IN redis.nexclipper.nexclipper.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,rd,ra 156 0.0001574s
+2019-04-12T01:53:05.796Z [INFO] 10.244.4.241:33168 - 61269 "A IN redis.nexclipper.svc.cluster.local. udp 52 false 512" NOERROR qr,aa,rd,ra 102 0.000352138s
+2019-04-12T01:53:06.044Z [INFO] 10.244.5.97:59166 - 4115 "A IN www.facebook.com.cluster.local. udp 48 false 512" NXDOMAIN qr,aa,rd,ra 141 0.000171325s
+2019-04-12T01:53:14.96Z [INFO] 10.244.3.95:33189 - 55282 "A IN nexrouter.nexclipper-saas.svc.cluster.local. udp 61 false 512" NOERROR qr,aa,rd,ra 120 0.000384344s
+2019-04-12T01:53:18.691Z [INFO] 10.244.4.241:38267 - 28405 "A IN influx.nexclipper.nexclipper.svc.cluster.local. udp 64 false 512" NXDOMAIN qr,aa,rd,ra 157 0.000310318s
+2019-04-12T01:53:20.043Z [INFO] 10.244.5.93:34590 - 18423 "A IN nexrouter.nexclipper-saas.svc.cluster.local. udp 61 false 512" NOERROR qr,aa,rd,ra 120 0.000199031s
+2019-04-12T01:53:22.873Z [INFO] 10.244.6.155:59203 - 38343 "A IN redis.nexclipper.nexclipper.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,aa,rd,ra 156 0.000314861s
+2019-04-12T01:53:31.332Z [INFO] 10.244.4.235:47787 - 12330 "A IN influx.nexclipper.nexclipper.svc.cluster.local. udp 64 false 512" NXDOMAIN qr,rd,ra 157 0.00027305s
+2019-04-12T01:53:31.405Z [INFO] 10.244.4.235:53216 - 13155 "A IN influx.nexclipper.svc.cluster.local. udp 53 false 512" NOERROR qr,aa,rd,ra 104 0.000274574s
+2019-04-12T01:53:36.013Z [INFO] 10.244.4.241:47393 - 63180 "A IN redis.nexclipper.nexclipper.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,rd,ra 156 0.000228655s
+2019-04-12T01:53:36.014Z [INFO] 10.244.4.241:55476 - 31926 "A IN redis.nexclipper.svc.cluster.local. udp 52 false 512" NOERROR qr,aa,rd,ra 102 0.000253818s
+2019-04-12T01:53:38.623Z [INFO] 10.244.6.154:58678 - 58844 "A IN influx.nexclipper.nexclipper.svc.cluster.local. udp 64 false 512" NXDOMAIN qr,rd,ra 157 0.000184322s
+2019-04-12T01:53:43.398Z [INFO] 10.244.6.154:46099 - 43981 "A IN redis.nexclipper.nexclipper.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,rd,ra 156 0.000201719s
+2019-04-12T01:53:50.053Z [INFO] 10.244.5.93:59099 - 57589 "A IN nexrouter.nexclipper-saas.svc.cluster.local. udp 61 false 512" NOERROR qr,aa,rd,ra 120 0.000198691s
+2019-04-12T01:54:00.354Z [INFO] 10.244.3.95:45890 - 27518 "A IN collector.nexclipper-saas.svc.cluster.local. udp 61 false 512" NOERROR qr,aa,rd,ra 120 0.000361478s
+2019-04-12T01:54:03.998Z [INFO] 10.244.5.97:57295 - 41093 "A IN www.nexclipper.com.svc.cluster.local. udp 54 false 512" NXDOMAIN qr,aa,rd,ra 147 0.000309333s
+2019-04-12T01:54:04Z [INFO] 10.244.5.97:47352 - 6813 "A IN www.nexclipper.com.cluster.local. udp 50 false 512" NXDOMAIN qr,aa,rd,ra 143 0.000297218s
+2019-04-12T01:54:04.32Z [INFO] 10.244.5.97:56330 - 61760 "A IN www.nexcloud.co.kr.svc.cluster.local. udp 54 false 512" NXDOMAIN qr,aa,rd,ra 147 0.000350741s
+2019-04-12T01:54:04.321Z [INFO] 10.244.5.97:57434 - 36605 "A IN www.nexcloud.co.kr.cluster.local. udp 50 false 512" NXDOMAIN qr,aa,rd,ra 143 0.000271565s
+2019-04-12T01:54:04.393Z [INFO] 10.244.5.97:57722 - 44119 "A IN www.nexcloud.co.kr. udp 36 false 512" NOERROR qr,rd,ra 112 0.070382293s
+2019-04-12T01:54:04.597Z [INFO] 10.244.5.97:42675 - 4089 "A IN server.nexclipper.com.nexclipper-saas.svc.cluster.local. udp 73 false 512" NXDOMAIN qr,aa,rd,ra 166 0.000288016s
+2019-04-12T01:54:04.668Z [INFO] 10.244.5.97:54855 - 6642 "A IN server.nexclipper.com. udp 39 false 512" NOERROR qr,rd,ra 76 0.067752932s
+2019-04-12T01:54:06.032Z [INFO] 10.244.4.241:36254 - 16991 "A IN redis.nexclipper.svc.cluster.local. udp 52 false 512" NOERROR qr,aa,rd,ra 102 0.00026383s
+2019-04-12T01:54:06.309Z [INFO] 10.244.5.97:49799 - 50603 "A IN www.facebook.com.svc.cluster.local. udp 52 false 512" NXDOMAIN qr,aa,rd,ra 145 0.000212445s
+2019-04-12T01:54:06.35Z [INFO] 10.244.5.97:42815 - 35480 "A IN www.facebook.com. udp 34 false 512" NOERROR qr,rd,ra 134 0.039631615s
+2019-04-12T01:54:13.779Z [INFO] 10.244.6.154:50917 - 59771 "A IN redis.nexclipper.nexclipper.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,aa,rd,ra 156 0.000336453s
+2019-04-12T01:54:13.78Z [INFO] 10.244.6.154:49646 - 63868 "A IN redis.nexclipper.svc.cluster.local. udp 52 false 512" NOERROR qr,aa,rd,ra 102 0.000208117s
+2019-04-12T01:54:14.972Z [INFO] 10.244.3.95:40772 - 40315 "A IN nexrouter.nexclipper-saas.nexclipper-saas.svc.cluster.local. udp 77 false 512" NXDOMAIN qr,aa,rd,ra 170 0.000280251s
+2019-04-12T01:54:14.973Z [INFO] 10.244.3.95:49589 - 54796 "A IN nexrouter.nexclipper-saas.svc.cluster.local. udp 61 false 512" NOERROR qr,aa,rd,ra 120 0.000182301s
+2019-04-12T01:54:20.453Z [INFO] 10.244.6.154:36598 - 13105 "A IN influx.nexclipper.svc.cluster.local. udp 53 false 512" NOERROR qr,aa,rd,ra 104 0.000254214s
+2019-04-12T01:54:23.455Z [INFO] 10.244.6.155:39536 - 30232 "A IN redis.nexclipper.nexclipper.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,rd,ra 156 0.000170515s
+2019-04-12T01:54:23.489Z [INFO] 10.244.6.155:39666 - 33508 "A IN redis.nexclipper.svc.cluster.local. udp 52 false 512" NOERROR qr,aa,rd,ra 102 0.000226418s
+2019-04-12T01:54:30.564Z [INFO] 10.244.2.112:53767 - 63698 "A IN mysql.nexclipper-saas.svc.cluster.local. udp 57 false 512" NOERROR qr,aa,rd,ra 112 0.000332882s
+2019-04-12T01:54:41.365Z [INFO] 10.244.4.241:37234 - 61844 "A IN redis.nexclipper.svc.cluster.local. udp 52 false 512" NOERROR qr,aa,rd,ra 102 0.000351622s
+2019-04-12T01:54:44.98Z [INFO] 10.244.3.95:41174 - 58226 "A IN nexrouter.nexclipper-saas.nexclipper-saas.svc.cluster.local. udp 77 false 512" NXDOMAIN qr,aa,rd,ra 170 0.000386057s
+2019-04-12T01:54:44.981Z [INFO] 10.244.3.95:37862 - 32714 "A IN nexrouter.nexclipper-saas.svc.cluster.local. udp 61 false 512" NOERROR qr,aa,rd,ra 120 0.000229256s
+2019-04-12T01:54:48.227Z [INFO] 10.244.3.95:36931 - 44414 "A IN collector.nexclipper-saas.nexclipper-saas.svc.cluster.local. udp 77 false 512" NXDOMAIN qr,aa,rd,ra 170 0.00021753s
+2019-04-12T01:54:49.399Z [INFO] 10.244.6.154:43183 - 59187 "A IN redis.nexclipper.nexclipper.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,aa,rd,ra 156 0.000397605s
+2019-04-12T01:54:52.833Z [INFO] 10.244.6.154:45516 - 38447 "A IN influx.nexclipper.nexclipper.svc.cluster.local. udp 64 false 512" NXDOMAIN qr,aa,rd,ra 157 0.000534256s
+2019-04-12T01:54:52.834Z [INFO] 10.244.6.154:46975 - 19007 "A IN influx.nexclipper.svc.cluster.local. udp 53 false 512" NOERROR qr,aa,rd,ra 104 0.000283076s
+2019-04-12T01:54:58.646Z [INFO] 10.244.6.155:44480 - 29956 "A IN redis.nexclipper.nexclipper.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,rd,ra 156 0.000183831s
+2019-04-12T01:55:04.001Z [INFO] 10.244.5.97:39444 - 56990 "A IN www.nexclipper.com.nexclipper-saas.svc.cluster.local. udp 70 false 512" NXDOMAIN qr,aa,rd,ra 163 0.000399616s
+2019-04-12T01:55:04.419Z [INFO] 10.244.5.97:45615 - 26990 "A IN www.nexcloud.co.kr.svc.cluster.local. udp 54 false 512" NXDOMAIN qr,aa,rd,ra 147 0.000273025s
+2019-04-12T01:55:04.43Z [INFO] 10.244.5.97:34432 - 19413 "A IN www.nexcloud.co.kr.cluster.local. udp 50 false 512" NXDOMAIN qr,aa,rd,ra 143 0.000246535s
+2019-04-12T01:55:05.287Z [INFO] 10.244.5.97:55704 - 53020 "A IN server.nexclipper.com.svc.cluster.local. udp 57 false 512" NXDOMAIN qr,aa,rd,ra 150 0.000237251s
+2019-04-12T01:55:05.288Z [INFO] 10.244.5.97:56002 - 5029 "A IN server.nexclipper.com.cluster.local. udp 53 false 512" NXDOMAIN qr,aa,rd,ra 146 0.000202391s
+2019-04-12T01:55:06.111Z [INFO] 10.244.5.97:37343 - 38816 "A IN www.facebook.com.nexclipper-saas.svc.cluster.local. udp 68 false 512" NXDOMAIN qr,aa,rd,ra 161 0.000282909s
+2019-04-12T01:55:06.113Z [INFO] 10.244.5.97:45711 - 23680 "A IN www.facebook.com.cluster.local. udp 48 false 512" NXDOMAIN qr,aa,rd,ra 141 0.000216377s
+2019-04-12T01:55:20.301Z [INFO] 10.244.5.93:46567 - 44118 "A IN nexrouter.nexclipper-saas.nexclipper-saas.svc.cluster.local. udp 77 false 512" NXDOMAIN qr,aa,rd,ra 170 0.000323518s
+2019-04-12T01:55:20.303Z [INFO] 10.244.5.93:49739 - 6993 "A IN nexrouter.nexclipper-saas.svc.cluster.local. udp 61 false 512" NOERROR qr,aa,rd,ra 120 0.000233237s
+2019-04-12T01:55:21.331Z [INFO] 10.244.4.241:36604 - 13124 "A IN redis.nexclipper.nexclipper.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,aa,rd,ra 156 0.000422085s
+2019-04-12T01:55:21.333Z [INFO] 10.244.4.241:39942 - 3365 "A IN redis.nexclipper.svc.cluster.local. udp 52 false 512" NOERROR qr,aa,rd,ra 102 0.000207992s
+2019-04-12T01:55:24.206Z [INFO] 10.244.6.154:39621 - 41236 "A IN redis.nexclipper.nexclipper.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,rd,ra 156 0.000255799s
+2019-04-12T01:55:28.767Z [INFO] 10.244.6.155:47869 - 8924 "A IN redis.nexclipper.svc.cluster.local. udp 52 false 512" NOERROR qr,aa,rd,ra 102 0.000215713s
+2019-04-12T01:55:31.974Z [INFO] 10.244.6.154:55155 - 39094 "A IN influx.nexclipper.nexclipper.svc.cluster.local. udp 64 false 512" NXDOMAIN qr,aa,rd,ra 157 0.000297219s
+2019-04-12T01:55:45.332Z [INFO] 10.244.3.95:38699 - 45092 "A IN nexrouter.nexclipper-saas.svc.cluster.local. udp 61 false 512" NOERROR qr,aa,rd,ra 120 0.000243124s
+2019-04-12T01:55:47.648Z [INFO] 10.244.5.97:50253 - 28951 "A IN redis.nexclipper-saas.nexclipper-saas.svc.cluster.local. udp 73 false 512" NXDOMAIN qr,aa,rd,ra 166 0.000246482s
+2019-04-12T01:55:47.656Z [INFO] 10.244.5.97:60388 - 40781 "A IN redis.nexclipper-saas.svc.cluster.local. udp 57 false 512" NOERROR qr,aa,rd,ra 112 0.000205303s
+2019-04-12T01:55:51.841Z [INFO] 10.244.4.241:45474 - 37106 "A IN redis.nexclipper.nexclipper.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,aa,rd,ra 156 0.000334371s
+2019-04-12T01:55:51.895Z [INFO] 10.244.4.241:53011 - 19222 "A IN redis.nexclipper.svc.cluster.local. udp 52 false 512" NOERROR qr,aa,rd,ra 102 0.000263358s
+2019-04-12T01:55:54.42Z [INFO] 10.244.3.95:49524 - 16704 "A IN collector.nexclipper-saas.nexclipper-saas.svc.cluster.local. udp 77 false 512" NXDOMAIN qr,aa,rd,ra 170 0.000429156s
+2019-04-12T01:55:54.421Z [INFO] 10.244.3.95:46771 - 40264 "A IN collector.nexclipper-saas.svc.cluster.local. udp 61 false 512" NOERROR qr,aa,rd,ra 120 0.000260247s
+2019-04-12T01:56:00.015Z [INFO] 10.244.6.154:43886 - 48580 "A IN redis.nexclipper.nexclipper.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,rd,ra 156 0.000291285s
+2019-04-12T01:56:04.055Z [INFO] 10.244.5.97:56920 - 27571 "A IN www.nexclipper.com.svc.cluster.local. udp 54 false 512" NXDOMAIN qr,aa,rd,ra 147 0.00017561s
+2019-04-12T01:56:04.056Z [INFO] 10.244.5.97:48433 - 40724 "A IN www.nexclipper.com.cluster.local. udp 50 false 512" NXDOMAIN qr,aa,rd,ra 143 0.000226448s
+2019-04-12T01:56:04.502Z [INFO] 10.244.5.97:38069 - 62824 "A IN www.nexcloud.co.kr.cluster.local. udp 50 false 512" NXDOMAIN qr,aa,rd,ra 143 0.00022095s
+2019-04-12T01:56:04.569Z [INFO] 10.244.5.97:50039 - 39534 "A IN www.nexcloud.co.kr. udp 36 false 512" NOERROR qr,rd,ra 112 0.065281044s
+2019-04-12T01:56:04.862Z [INFO] 10.244.5.97:59734 - 52495 "A IN server.nexclipper.com.nexclipper-saas.svc.cluster.local. udp 73 false 512" NXDOMAIN qr,aa,rd,ra 166 0.000333805s
+2019-04-12T01:56:04.879Z [INFO] 10.244.5.97:34254 - 7368 "A IN server.nexclipper.com.svc.cluster.local. udp 57 false 512" NXDOMAIN qr,aa,rd,ra 150 0.000239749s
+2019-04-12T01:56:05.985Z [INFO] 10.244.5.97:52781 - 38833 "A IN www.facebook.com.cluster.local. udp 48 false 512" NXDOMAIN qr,aa,rd,ra 141 0.000166468s
+2019-04-12T01:56:08.826Z [INFO] 10.244.6.154:33543 - 36469 "A IN influx.nexclipper.nexclipper.svc.cluster.local. udp 64 false 512" NXDOMAIN qr,aa,rd,ra 157 0.000219412s
+2019-04-12T01:56:19.986Z [INFO] 10.244.6.148:60835 - 15940 "AAAA IN localhost.cattle-prometheus.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,aa,rd,ra 156 0.000464654s
+2019-04-12T01:56:19.987Z [INFO] 10.244.6.148:48777 - 2713 "A IN localhost.cattle-prometheus.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,aa,rd,ra 156 0.000711498s
+2019-04-12T01:56:20.014Z [INFO] 10.244.6.148:36564 - 17068 "A IN localhost.svc.cluster.local. udp 45 false 512" NXDOMAIN qr,aa,rd,ra 138 0.0002599s
+2019-04-12T01:56:20.016Z [INFO] 10.244.6.148:53373 - 41788 "A IN localhost.cluster.local. udp 41 false 512" NXDOMAIN qr,aa,rd,ra 134 0.000209431s
+2019-04-12T01:56:21.161Z [INFO] 10.244.6.148:53295 - 1691 "AAAA IN localhost.cattle-prometheus.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,rd,ra 156 0.000224748s
+2019-04-12T01:56:21.413Z [INFO] 10.244.6.148:41135 - 28043 "AAAA IN localhost.svc.cluster.local. udp 45 false 512" NXDOMAIN qr,aa,rd,ra 138 0.000336195s
+2019-04-12T01:56:21.414Z [INFO] 10.244.6.148:40698 - 4001 "AAAA IN localhost.cluster.local. udp 41 false 512" NXDOMAIN qr,aa,rd,ra 134 0.000166692s
+2019-04-12T01:56:21.446Z [INFO] 10.244.6.148:48386 - 28133 "A IN localhost. udp 27 false 512" NXDOMAIN qr,rd,ra 103 0.030321954s
+2019-04-12T01:56:22.367Z [INFO] 10.244.6.148:56550 - 5208 "A IN localhost.cattle-prometheus.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,rd,ra 156 0.000303337s
+2019-04-12T01:56:22.369Z [INFO] 10.244.6.148:49737 - 59979 "A IN localhost.svc.cluster.local. udp 45 false 512" NXDOMAIN qr,rd,ra 138 0.000167837s
+2019-04-12T01:56:22.371Z [INFO] 10.244.6.148:59623 - 18655 "A IN localhost.cluster.local. udp 41 false 512" NXDOMAIN qr,rd,ra 134 0.000149618s
+2019-04-12T01:56:22.409Z [INFO] 10.244.6.148:35073 - 28075 "AAAA IN localhost. udp 27 false 512" NXDOMAIN qr,rd,ra 103 0.036925985s
+2019-04-12T01:56:31.243Z [INFO] 10.244.6.148:57341 - 33027 "A IN localhost.cattle-prometheus.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,rd,ra 156 0.000138304s
+2019-04-12T01:56:31.303Z [INFO] 10.244.6.148:33234 - 6651 "A IN localhost.cluster.local. udp 41 false 512" NXDOMAIN qr,rd,ra 134 0.000169244s
+2019-04-12T01:56:31.303Z [INFO] 10.244.6.148:48686 - 65489 "AAAA IN localhost.cluster.local. udp 41 false 512" NXDOMAIN qr,rd,ra 134 0.000353664s
+2019-04-12T01:56:31.344Z [INFO] 10.244.6.148:59064 - 55859 "A IN localhost. udp 27 false 512" NXDOMAIN qr,rd,ra 103 0.000218896s
+2019-04-12T01:56:31.344Z [INFO] 10.244.6.148:48129 - 35212 "AAAA IN localhost. udp 27 false 512" NXDOMAIN qr,rd,ra 103 0.000108552s
+2019-04-12T01:56:32.372Z [INFO] 10.244.6.148:52704 - 29669 "AAAA IN localhost.cattle-prometheus.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,rd,ra 156 0.0001961s
+2019-04-12T01:56:32.378Z [INFO] 10.244.6.148:43980 - 28143 "A IN localhost. udp 27 false 512" NXDOMAIN qr,rd,ra 103 0.000148297s
+2019-04-12T01:56:32.378Z [INFO] 10.244.6.148:55449 - 18511 "AAAA IN localhost. udp 27 false 512" NXDOMAIN qr,rd,ra 103 0.000129162s
+2019-04-12T01:56:34.211Z [INFO] 10.244.6.155:33129 - 20804 "A IN redis.nexclipper.svc.cluster.local. udp 52 false 512" NOERROR qr,aa,rd,ra 102 0.000213924s
+2019-04-12T01:56:39.589Z [INFO] 10.244.6.154:50213 - 5447 "A IN redis.nexclipper.svc.cluster.local. udp 52 false 512" NOERROR qr,aa,rd,ra 102 0.000250925s
+2019-04-12T01:56:39.796Z [INFO] 10.244.2.112:52668 - 21247 "A IN mysql.nexclipper-saas.svc.cluster.local. udp 57 false 512" NOERROR qr,aa,rd,ra 112 0.000177571s
+2019-04-12T01:56:41.12Z [INFO] 10.244.6.148:50618 - 24566 "A IN localhost.cattle-prometheus.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,rd,ra 156 0.0002785s
+2019-04-12T01:56:41.121Z [INFO] 10.244.6.148:55008 - 41045 "AAAA IN localhost.svc.cluster.local. udp 45 false 512" NXDOMAIN qr,rd,ra 138 0.000129278s
+2019-04-12T01:56:41.122Z [INFO] 10.244.6.148:44869 - 7445 "A IN localhost.svc.cluster.local. udp 45 false 512" NXDOMAIN qr,rd,ra 138 0.000128744s
+2019-04-12T01:56:41.123Z [INFO] 10.244.6.148:46746 - 25066 "A IN localhost.cluster.local. udp 41 false 512" NXDOMAIN qr,rd,ra 134 0.000096633s
+2019-04-12T01:56:41.127Z [INFO] 10.244.6.148:36930 - 8519 "AAAA IN localhost. udp 27 false 512" NXDOMAIN qr,rd,ra 103 0.00009389s
+2019-04-12T01:56:41.127Z [INFO] 10.244.6.148:54366 - 24797 "A IN localhost. udp 27 false 512" NXDOMAIN qr,rd,ra 103 0.000093223s
+2019-04-12T01:56:42.368Z [INFO] 10.244.6.148:59486 - 9796 "AAAA IN localhost.cattle-prometheus.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,rd,ra 156 0.000148422s
+2019-04-12T01:56:42.371Z [INFO] 10.244.6.148:38389 - 37227 "A IN localhost.cluster.local. udp 41 false 512" NXDOMAIN qr,rd,ra 134 0.000107037s
+2019-04-12T01:56:42.372Z [INFO] 10.244.6.148:48258 - 18206 "A IN localhost. udp 27 false 512" NXDOMAIN qr,rd,ra 103 0.000107635s
+2019-04-12T01:56:42.372Z [INFO] 10.244.6.148:53440 - 26001 "AAAA IN localhost. udp 27 false 512" NXDOMAIN qr,rd,ra 103 0.000088737s
+2019-04-12T01:56:45.441Z [INFO] 10.244.3.95:49905 - 59724 "A IN nexrouter.nexclipper-saas.nexclipper-saas.svc.cluster.local. udp 77 false 512" NXDOMAIN qr,aa,rd,ra 170 0.000214621s
+2019-04-12T01:56:50.667Z [INFO] 10.244.5.93:45859 - 24937 "A IN nexrouter.nexclipper-saas.nexclipper-saas.svc.cluster.local. udp 77 false 512" NXDOMAIN qr,rd,ra 170 0.000577134s
+2019-04-12T01:56:50.669Z [INFO] 10.244.5.93:52343 - 3527 "A IN nexrouter.nexclipper-saas.svc.cluster.local. udp 61 false 512" NOERROR qr,aa,rd,ra 120 0.000337939s
+2019-04-12T01:56:51.225Z [INFO] 10.244.6.148:44044 - 48960 "A IN localhost.svc.cluster.local. udp 45 false 512" NXDOMAIN qr,aa,rd,ra 138 0.000328503s
+2019-04-12T01:56:51.349Z [INFO] 10.244.6.148:43841 - 9990 "AAAA IN localhost.cluster.local. udp 41 false 512" NXDOMAIN qr,rd,ra 134 0.000177252s
+2019-04-12T01:56:51.35Z [INFO] 10.244.6.148:51714 - 64018 "A IN localhost.cluster.local. udp 41 false 512" NXDOMAIN qr,aa,rd,ra 134 0.000153569s
+2019-04-12T01:56:51.646Z [INFO] 10.244.3.95:55055 - 15593 "A IN collector.nexclipper-saas.nexclipper-saas.svc.cluster.local. udp 77 false 512" NXDOMAIN qr,aa,rd,ra 170 0.000248223s
+2019-04-12T01:56:52.7Z [INFO] 10.244.6.148:39411 - 48151 "A IN localhost.cattle-prometheus.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,aa,rd,ra 156 0.000302878s
+2019-04-12T01:56:52.807Z [INFO] 10.244.6.148:50437 - 39430 "A IN localhost.cluster.local. udp 41 false 512" NXDOMAIN qr,rd,ra 134 0.000150511s
+2019-04-12T01:56:52.807Z [INFO] 10.244.6.148:47058 - 18084 "AAAA IN localhost.cluster.local. udp 41 false 512" NXDOMAIN qr,aa,rd,ra 134 0.00035878s
+2019-04-12T01:56:52.875Z [INFO] 10.244.6.148:39589 - 22227 "A IN localhost. udp 27 false 512" NXDOMAIN qr,rd,ra 103 0.0367606s
+2019-04-12T01:56:56.93Z [INFO] 10.244.4.241:58612 - 30884 "A IN redis.nexclipper.nexclipper.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,aa,rd,ra 156 0.000260223s
+2019-04-12T01:56:56.932Z [INFO] 10.244.4.241:50060 - 61736 "A IN redis.nexclipper.svc.cluster.local. udp 52 false 512" NOERROR qr,aa,rd,ra 102 0.000313354s
+2019-04-12T01:57:01.375Z [INFO] 10.244.6.148:52432 - 32784 "A IN localhost.cattle-prometheus.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,rd,ra 156 0.00030113s
+2019-04-12T01:57:01.375Z [INFO] 10.244.6.148:53741 - 4334 "AAAA IN localhost.cattle-prometheus.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,aa,rd,ra 156 0.000210258s
+2019-04-12T01:57:01.503Z [INFO] 10.244.6.148:60938 - 51661 "A IN localhost.svc.cluster.local. udp 45 false 512" NXDOMAIN qr,rd,ra 138 0.000314126s
+2019-04-12T01:57:01.503Z [INFO] 10.244.6.148:57862 - 20843 "AAAA IN localhost.svc.cluster.local. udp 45 false 512" NXDOMAIN qr,aa,rd,ra 138 0.00044745s
+2019-04-12T01:57:01.505Z [INFO] 10.244.6.148:51314 - 8476 "AAAA IN localhost.cluster.local. udp 41 false 512" NXDOMAIN qr,rd,ra 134 0.000213129s
+2019-04-12T01:57:01.539Z [INFO] 10.244.6.148:35049 - 394 "AAAA IN localhost. udp 27 false 512" NXDOMAIN qr,rd,ra 103 0.031708679s
+2019-04-12T01:57:02.367Z [INFO] 10.244.6.148:55147 - 52618 "AAAA IN localhost.cattle-prometheus.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,rd,ra 156 0.000203241s
+2019-04-12T01:57:02.37Z [INFO] 10.244.6.148:35908 - 10413 "AAAA IN localhost.cluster.local. udp 41 false 512" NXDOMAIN qr,rd,ra 134 0.000121248s
+2019-04-12T01:57:02.37Z [INFO] 10.244.6.148:37945 - 44306 "A IN localhost.cluster.local. udp 41 false 512" NXDOMAIN qr,rd,ra 134 0.000109015s
+2019-04-12T01:57:02.371Z [INFO] 10.244.6.148:60903 - 47440 "AAAA IN localhost. udp 27 false 512" NXDOMAIN qr,rd,ra 103 0.000118661s
+2019-04-12T01:57:02.371Z [INFO] 10.244.6.148:34347 - 15840 "A IN localhost. udp 27 false 512" NXDOMAIN qr,rd,ra 103 0.000079492s
+2019-04-12T01:57:04.082Z [INFO] 10.244.5.97:46854 - 24799 "A IN www.nexclipper.com.nexclipper-saas.svc.cluster.local. udp 70 false 512" NXDOMAIN qr,aa,rd,ra 163 0.000421789s
+2019-04-12T01:57:04.8Z [INFO] 10.244.5.97:56868 - 47616 "A IN www.nexclipper.com.cluster.local. udp 50 false 512" NXDOMAIN qr,aa,rd,ra 143 0.000259502s
+2019-04-12T01:57:04.905Z [INFO] 10.244.5.97:56939 - 33719 "A IN www.nexclipper.com. udp 36 false 512" NOERROR qr,rd,ra 112 0.074877203s
+2019-04-12T01:57:05.185Z [INFO] 10.244.5.97:50692 - 4179 "A IN www.nexcloud.co.kr.nexclipper-saas.svc.cluster.local. udp 70 false 512" NXDOMAIN qr,aa,rd,ra 163 0.000292081s
+2019-04-12T01:57:05.186Z [INFO] 10.244.5.97:59447 - 31401 "A IN www.nexcloud.co.kr.svc.cluster.local. udp 54 false 512" NXDOMAIN qr,aa,rd,ra 147 0.00016825s
+2019-04-12T01:57:05.189Z [INFO] 10.244.5.97:37058 - 33983 "A IN www.nexcloud.co.kr.cluster.local. udp 50 false 512" NXDOMAIN qr,aa,rd,ra 143 0.000139123s
+2019-04-12T01:57:05.376Z [INFO] 10.244.5.97:57880 - 55723 "A IN www.nexcloud.co.kr. udp 36 false 512" NOERROR qr,rd,ra 112 0.185237189s
+2019-04-12T01:57:05.653Z [INFO] 10.244.5.97:59470 - 8626 "A IN server.nexclipper.com.cluster.local. udp 53 false 512" NXDOMAIN qr,aa,rd,ra 146 0.000218742s
+2019-04-12T01:57:05.784Z [INFO] 10.244.5.97:37933 - 8519 "A IN server.nexclipper.com. udp 39 false 512" NOERROR qr,rd,ra 76 0.128588748s
+2019-04-12T01:57:08.178Z [INFO] 10.244.5.97:57586 - 11034 "A IN www.facebook.com.nexclipper-saas.svc.cluster.local. udp 68 false 512" NXDOMAIN qr,aa,rd,ra 161 0.000226704s
+2019-04-12T01:57:08.218Z [INFO] 10.244.5.97:37506 - 1113 "A IN www.facebook.com. udp 34 false 512" NOERROR qr,rd,ra 134 0.032368262s
+2019-04-12T01:57:09.507Z [INFO] 10.244.6.155:42465 - 56793 "A IN redis.nexclipper.svc.cluster.local. udp 52 false 512" NOERROR qr,aa,rd,ra 102 0.00017991s
+2019-04-12T01:57:11.333Z [INFO] 10.244.6.148:54641 - 12538 "A IN localhost.cattle-prometheus.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,rd,ra 156 0.000202038s
+2019-04-12T01:57:11.333Z [INFO] 10.244.6.148:47803 - 36308 "AAAA IN localhost.cattle-prometheus.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,rd,ra 156 0.000126084s
+2019-04-12T01:57:11.361Z [INFO] 10.244.6.148:44992 - 26368 "AAAA IN localhost.svc.cluster.local. udp 45 false 512" NXDOMAIN qr,rd,ra 138 0.000161142s
+2019-04-12T01:57:11.362Z [INFO] 10.244.6.148:50367 - 47254 "A IN localhost.svc.cluster.local. udp 45 false 512" NXDOMAIN qr,rd,ra 138 0.000137107s
+2019-04-12T01:57:11.367Z [INFO] 10.244.6.148:47085 - 57020 "A IN localhost.cluster.local. udp 41 false 512" NXDOMAIN qr,rd,ra 134 0.000241042s
+2019-04-12T01:57:11.41Z [INFO] 10.244.6.148:52700 - 33214 "A IN localhost. udp 27 false 512" NXDOMAIN qr,rd,ra 103 0.000137012s
+2019-04-12T01:57:11.41Z [INFO] 10.244.6.148:39036 - 12308 "AAAA IN localhost. udp 27 false 512" NXDOMAIN qr,rd,ra 103 0.000157926s
+2019-04-12T01:57:12.875Z [INFO] 10.244.6.148:33719 - 63437 "AAAA IN localhost.cattle-prometheus.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,rd,ra 156 0.000205756s
+2019-04-12T01:57:12.877Z [INFO] 10.244.6.148:52789 - 7656 "A IN localhost.cattle-prometheus.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,rd,ra 156 0.000133755s
+2019-04-12T01:57:12.882Z [INFO] 10.244.6.148:33361 - 1361 "AAAA IN localhost.svc.cluster.local. udp 45 false 512" NXDOMAIN qr,rd,ra 138 0.000170206s
+2019-04-12T01:57:12.882Z [INFO] 10.244.6.148:38195 - 61364 "A IN localhost.svc.cluster.local. udp 45 false 512" NXDOMAIN qr,rd,ra 138 0.000375912s
+2019-04-12T01:57:15.388Z [INFO] 10.244.6.154:48151 - 2421 "A IN redis.nexclipper.nexclipper.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,rd,ra 156 0.000297953s
+2019-04-12T01:57:15.389Z [INFO] 10.244.6.154:47099 - 16781 "A IN redis.nexclipper.svc.cluster.local. udp 52 false 512" NOERROR qr,aa,rd,ra 102 0.000194759s
+2019-04-12T01:57:15.69Z [INFO] 10.244.3.95:50617 - 24706 "A IN nexrouter.nexclipper-saas.nexclipper-saas.svc.cluster.local. udp 77 false 512" NXDOMAIN qr,aa,rd,ra 170 0.000262765s
+2019-04-12T01:57:20.678Z [INFO] 10.244.5.93:43887 - 58385 "A IN nexrouter.nexclipper-saas.nexclipper-saas.svc.cluster.local. udp 77 false 512" NXDOMAIN qr,rd,ra 170 0.000225761s
+2019-04-12T01:57:20.68Z [INFO] 10.244.5.93:36694 - 31012 "A IN nexrouter.nexclipper-saas.svc.cluster.local. udp 61 false 512" NOERROR qr,aa,rd,ra 120 0.000336583s
+2019-04-12T01:57:21.124Z [INFO] 10.244.6.148:60950 - 1362 "A IN localhost.cluster.local. udp 41 false 512" NXDOMAIN qr,rd,ra 134 0.000138699s
+2019-04-12T01:57:21.136Z [INFO] 10.244.6.148:46363 - 32726 "A IN localhost. udp 27 false 512" NXDOMAIN qr,rd,ra 103 0.000181577s
+2019-04-12T01:57:21.136Z [INFO] 10.244.6.148:40824 - 36739 "AAAA IN localhost. udp 27 false 512" NXDOMAIN qr,rd,ra 103 0.000315954s
+2019-04-12T01:57:22.378Z [INFO] 10.244.6.148:41106 - 25512 "AAAA IN localhost.cattle-prometheus.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,rd,ra 156 0.000275119s
+2019-04-12T01:57:22.379Z [INFO] 10.244.6.148:49794 - 44744 "A IN localhost.cattle-prometheus.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,rd,ra 156 0.000090067s
+2019-04-12T01:57:22.45Z [INFO] 10.244.6.148:33193 - 43428 "A IN localhost.cluster.local. udp 41 false 512" NXDOMAIN qr,aa,rd,ra 134 0.000213873s
+2019-04-12T01:57:31.122Z [INFO] 10.244.6.148:39675 - 33302 "A IN localhost.cattle-prometheus.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,aa,rd,ra 156 0.000293088s
+2019-04-12T01:57:31.124Z [INFO] 10.244.6.148:36641 - 684 "AAAA IN localhost.svc.cluster.local. udp 45 false 512" NXDOMAIN qr,rd,ra 138 0.000186036s
+2019-04-12T01:57:31.127Z [INFO] 10.244.6.148:43007 - 23545 "AAAA IN localhost. udp 27 false 512" NXDOMAIN qr,rd,ra 103 0.000196288s
+2019-04-12T01:57:31.159Z [INFO] 10.244.6.148:35327 - 58872 "A IN localhost. udp 27 false 512" NXDOMAIN qr,rd,ra 103 0.031519634s
+2019-04-12T01:57:32.372Z [INFO] 10.244.6.148:60395 - 65452 "A IN localhost.cattle-prometheus.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,rd,ra 156 0.000174496s
+2019-04-12T01:57:32.373Z [INFO] 10.244.6.148:48521 - 59314 "AAAA IN localhost.svc.cluster.local. udp 45 false 512" NXDOMAIN qr,aa,rd,ra 138 0.000232646s
+2019-04-12T01:57:32.373Z [INFO] 10.244.6.148:39929 - 49282 "A IN localhost.svc.cluster.local. udp 45 false 512" NXDOMAIN qr,aa,rd,ra 138 0.00030689s
+2019-04-12T01:57:32.374Z [INFO] 10.244.6.148:45523 - 59684 "AAAA IN localhost.cluster.local. udp 41 false 512" NXDOMAIN qr,aa,rd,ra 134 0.000148008s
+2019-04-12T01:57:32.413Z [INFO] 10.244.6.148:54504 - 14328 "AAAA IN localhost. udp 27 false 512" NXDOMAIN qr,rd,ra 103 0.03659016s
+2019-04-12T01:57:41.408Z [INFO] 10.244.6.148:35825 - 27043 "A IN localhost.cattle-prometheus.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,rd,ra 156 0.000227077s
+2019-04-12T01:57:41.735Z [INFO] 10.244.6.148:56879 - 32306 "A IN localhost.svc.cluster.local. udp 45 false 512" NXDOMAIN qr,rd,ra 138 0.000160675s
+2019-04-12T01:57:41.749Z [INFO] 10.244.6.148:37966 - 14332 "AAAA IN localhost.cluster.local. udp 41 false 512" NXDOMAIN qr,rd,ra 134 0.000200727s
+2019-04-12T01:57:41.751Z [INFO] 10.244.6.148:37579 - 21699 "AAAA IN localhost. udp 27 false 512" NXDOMAIN qr,rd,ra 103 0.000136265s
+2019-04-12T01:57:41.751Z [INFO] 10.244.6.148:60468 - 40753 "A IN localhost. udp 27 false 512" NXDOMAIN qr,rd,ra 103 0.000156202s
+2019-04-12T01:57:42.396Z [INFO] 10.244.6.148:42371 - 57194 "A IN localhost.cattle-prometheus.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,rd,ra 156 0.000170693s
+2019-04-12T01:57:42.406Z [INFO] 10.244.6.148:50669 - 2216 "A IN localhost.svc.cluster.local. udp 45 false 512" NXDOMAIN qr,rd,ra 138 0.000164459s
+2019-04-12T01:57:42.408Z [INFO] 10.244.6.148:48513 - 42461 "AAAA IN localhost.cluster.local. udp 41 false 512" NXDOMAIN qr,rd,ra 134 0.000150251s
+2019-04-12T01:57:42.41Z [INFO] 10.244.6.148:55144 - 35069 "AAAA IN localhost. udp 27 false 512" NXDOMAIN qr,rd,ra 103 0.000098701s
+2019-04-12T01:57:44.5Z [INFO] 10.244.6.155:44086 - 20042 "A IN redis.nexclipper.nexclipper.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,aa,rd,ra 156 0.000282744s
+2019-04-12T01:57:44.501Z [INFO] 10.244.6.155:45162 - 35762 "A IN redis.nexclipper.svc.cluster.local. udp 52 false 512" NOERROR qr,aa,rd,ra 102 0.0001647s
+2019-04-12T01:57:45.709Z [INFO] 10.244.3.95:54154 - 11038 "A IN nexrouter.nexclipper-saas.svc.cluster.local. udp 61 false 512" NOERROR qr,aa,rd,ra 120 0.000326864s
+2019-04-12T01:57:50.732Z [INFO] 10.244.5.93:46181 - 64622 "A IN nexrouter.nexclipper-saas.nexclipper-saas.svc.cluster.local. udp 77 false 512" NXDOMAIN qr,aa,rd,ra 170 0.000406096s
+2019-04-12T01:57:51.265Z [INFO] 10.244.6.148:56177 - 7651 "A IN localhost.cattle-prometheus.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,rd,ra 156 0.000218778s
+2019-04-12T01:57:51.322Z [INFO] 10.244.6.148:42195 - 17822 "A IN localhost. udp 27 false 512" NXDOMAIN qr,rd,ra 103 0.000183898s
+2019-04-12T01:57:56.08Z [INFO] 10.244.6.154:48782 - 23719 "A IN influx.nexclipper.nexclipper.svc.cluster.local. udp 64 false 512" NXDOMAIN qr,aa,rd,ra 157 0.000389007s
+2019-04-12T01:57:56.082Z [INFO] 10.244.6.154:33721 - 23299 "A IN influx.nexclipper.svc.cluster.local. udp 53 false 512" NOERROR qr,aa,rd,ra 104 0.000219829s
+2019-04-12T01:57:57.331Z [INFO] 10.244.4.241:33993 - 53559 "A IN redis.nexclipper.nexclipper.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,rd,ra 156 0.000194687s
+2019-04-12T01:57:57.705Z [INFO] 10.244.3.95:53307 - 41345 "A IN collector.nexclipper-saas.nexclipper-saas.svc.cluster.local. udp 77 false 512" NXDOMAIN qr,aa,rd,ra 170 0.00022779s
+2019-04-12T01:57:57.706Z [INFO] 10.244.3.95:41807 - 57837 "A IN collector.nexclipper-saas.svc.cluster.local. udp 61 false 512" NOERROR qr,aa,rd,ra 120 0.000158454s
+2019-04-12T01:58:04.168Z [INFO] 10.244.5.97:42635 - 27067 "A IN www.nexclipper.com.cluster.local. udp 50 false 512" NXDOMAIN qr,aa,rd,ra 143 0.000278446s
+2019-04-12T01:58:05.996Z [INFO] 10.244.5.97:52090 - 10464 "A IN www.nexcloud.co.kr.nexclipper-saas.svc.cluster.local. udp 70 false 512" NXDOMAIN qr,aa,rd,ra 163 0.000283481s
+2019-04-12T01:58:06Z [INFO] 10.244.5.97:49105 - 21145 "A IN www.nexcloud.co.kr.cluster.local. udp 50 false 512" NXDOMAIN qr,aa,rd,ra 143 0.000190727s
+2019-04-12T01:58:07.049Z [INFO] 10.244.5.97:36382 - 13085 "A IN server.nexclipper.com.nexclipper-saas.svc.cluster.local. udp 73 false 512" NXDOMAIN qr,aa,rd,ra 166 0.000258932s
+2019-04-12T01:58:07.051Z [INFO] 10.244.5.97:57070 - 10747 "A IN server.nexclipper.com.cluster.local. udp 53 false 512" NXDOMAIN qr,aa,rd,ra 146 0.000241409s
+2019-04-12T01:58:09.108Z [INFO] 10.244.5.97:45026 - 61466 "A IN www.facebook.com.nexclipper-saas.svc.cluster.local. udp 68 false 512" NXDOMAIN qr,aa,rd,ra 161 0.000260469s
+2019-04-12T01:58:09.172Z [INFO] 10.244.5.97:37823 - 40315 "A IN www.facebook.com.svc.cluster.local. udp 52 false 512" NXDOMAIN qr,aa,rd,ra 145 0.000336383s
+2019-04-12T01:58:09.206Z [INFO] 10.244.5.97:59443 - 56461 "A IN www.facebook.com. udp 34 false 512" NOERROR qr,rd,ra 134 0.031948641s
+2019-04-12T01:58:13.758Z [INFO] 10.244.4.235:58211 - 44193 "A IN influx.nexclipper.nexclipper.svc.cluster.local. udp 64 false 512" NXDOMAIN qr,rd,ra 157 0.000178887s
+2019-04-12T01:58:13.761Z [INFO] 10.244.4.235:34092 - 8241 "A IN influx.nexclipper.svc.cluster.local. udp 53 false 512" NOERROR qr,aa,rd,ra 104 0.00021611s
+2019-04-12T01:58:15.719Z [INFO] 10.244.3.95:53332 - 20900 "A IN nexrouter.nexclipper-saas.nexclipper-saas.svc.cluster.local. udp 77 false 512" NXDOMAIN qr,rd,ra 170 0.00019641s
+2019-04-12T01:58:15.72Z [INFO] 10.244.3.95:44648 - 35249 "A IN nexrouter.nexclipper-saas.svc.cluster.local. udp 61 false 512" NOERROR qr,aa,rd,ra 120 0.000222818s
+2019-04-12T01:58:19.581Z [INFO] 10.244.6.155:49395 - 9659 "A IN redis.nexclipper.nexclipper.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,aa,rd,ra 156 0.000265187s
+2019-04-12T01:58:20.763Z [INFO] 10.244.5.93:35441 - 8296 "A IN nexrouter.nexclipper-saas.nexclipper-saas.svc.cluster.local. udp 77 false 512" NXDOMAIN qr,aa,rd,ra 170 0.00031328s
+2019-04-12T01:58:20.764Z [INFO] 10.244.5.93:51968 - 37652 "A IN nexrouter.nexclipper-saas.svc.cluster.local. udp 61 false 512" NOERROR qr,aa,rd,ra 120 0.000197981s
+2019-04-12T01:58:22.731Z [INFO] 10.244.6.148:53206 - 33499 "AAAA IN alertmanager-operated.cattle-prometheus.cattle-prometheus.svc.cluster.local. udp 93 false 512" NXDOMAIN qr,aa,rd,ra 186 0.000282195s
+2019-04-12T01:58:22.731Z [INFO] 10.244.6.148:59320 - 42787 "A IN alertmanager-operated.cattle-prometheus.cattle-prometheus.svc.cluster.local. udp 93 false 512" NXDOMAIN qr,aa,rd,ra 186 0.000355695s
+2019-04-12T01:58:22.735Z [INFO] 10.244.6.148:38604 - 6610 "A IN alertmanager-operated.cattle-prometheus.cluster.local. udp 71 false 512" NXDOMAIN qr,aa,rd,ra 164 0.000194026s
+2019-04-12T01:58:22.805Z [INFO] 10.244.6.148:45581 - 50854 "AAAA IN alertmanager-operated.cattle-prometheus. udp 57 false 512" NXDOMAIN qr,rd,ra 133 0.068206056s
+2019-04-12T01:58:28.346Z [INFO] 10.244.4.241:53456 - 16207 "A IN redis.nexclipper.nexclipper.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,rd,ra 156 0.000154466s
+2019-04-12T01:58:41.15Z [INFO] 10.244.6.148:47774 - 65417 "A IN localhost.svc.cluster.local. udp 45 false 512" NXDOMAIN qr,aa,rd,ra 138 0.000276882s
+2019-04-12T01:58:41.184Z [INFO] 10.244.6.148:47051 - 51319 "A IN localhost. udp 27 false 512" NXDOMAIN qr,rd,ra 103 0.030960552s
+2019-04-12T01:58:42.421Z [INFO] 10.244.6.148:36300 - 28073 "AAAA IN localhost.cattle-prometheus.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,aa,rd,ra 156 0.000324044s
+2019-04-12T01:58:42.423Z [INFO] 10.244.6.148:33391 - 42592 "AAAA IN localhost.svc.cluster.local. udp 45 false 512" NXDOMAIN qr,aa,rd,ra 138 0.00018248s
+2019-04-12T01:58:42.423Z [INFO] 10.244.6.148:55628 - 31906 "A IN localhost.svc.cluster.local. udp 45 false 512" NXDOMAIN qr,rd,ra 138 0.000173374s
+2019-04-12T01:58:42.424Z [INFO] 10.244.6.148:50011 - 56763 "AAAA IN localhost.cluster.local. udp 41 false 512" NXDOMAIN qr,aa,rd,ra 134 0.000232297s
+2019-04-12T01:58:42.425Z [INFO] 10.244.6.148:52869 - 23165 "A IN localhost.cluster.local. udp 41 false 512" NXDOMAIN qr,aa,rd,ra 134 0.000179985s
+2019-04-12T01:58:42.426Z [INFO] 10.244.6.148:54033 - 31817 "A IN localhost. udp 27 false 512" NXDOMAIN qr,rd,ra 103 0.000132847s
+2019-04-12T01:58:45.817Z [INFO] 10.244.3.95:32843 - 25431 "A IN nexrouter.nexclipper-saas.svc.cluster.local. udp 61 false 512" NOERROR qr,aa,rd,ra 120 0.000221363s
+2019-04-12T01:58:50.141Z [INFO] 10.244.6.154:49287 - 5907 "A IN influx.nexclipper.nexclipper.svc.cluster.local. udp 64 false 512" NXDOMAIN qr,aa,rd,ra 157 0.00027518s
+2019-04-12T01:58:50.143Z [INFO] 10.244.6.154:35553 - 57340 "A IN influx.nexclipper.svc.cluster.local. udp 53 false 512" NOERROR qr,aa,rd,ra 104 0.000266828s
+2019-04-12T01:58:50.768Z [INFO] 10.244.5.93:60477 - 15233 "A IN nexrouter.nexclipper-saas.nexclipper-saas.svc.cluster.local. udp 77 false 512" NXDOMAIN qr,aa,rd,ra 170 0.000339611s
+2019-04-12T01:58:50.769Z [INFO] 10.244.5.93:42125 - 17166 "A IN nexrouter.nexclipper-saas.svc.cluster.local. udp 61 false 512" NOERROR qr,rd,ra 120 0.000143734s
+2019-04-12T01:58:51.121Z [INFO] 10.244.6.148:51841 - 64578 "A IN localhost.cattle-prometheus.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,aa,rd,ra 156 0.000177493s
+2019-04-12T01:58:51.122Z [INFO] 10.244.6.148:42993 - 34956 "AAAA IN localhost.svc.cluster.local. udp 45 false 512" NXDOMAIN qr,rd,ra 138 0.000132981s
+2019-04-12T01:58:51.126Z [INFO] 10.244.6.148:48379 - 37446 "A IN localhost. udp 27 false 512" NXDOMAIN qr,rd,ra 103 0.000159244s
+2019-04-12T01:58:52.387Z [INFO] 10.244.6.148:45350 - 16926 "AAAA IN localhost.cattle-prometheus.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,rd,ra 156 0.000198297s
+2019-04-12T01:58:52.426Z [INFO] 10.244.6.148:59363 - 44310 "A IN localhost.svc.cluster.local. udp 45 false 512" NXDOMAIN qr,rd,ra 138 0.000144494s
+2019-04-12T01:58:52.426Z [INFO] 10.244.6.148:50505 - 62524 "AAAA IN localhost.svc.cluster.local. udp 45 false 512" NXDOMAIN qr,rd,ra 138 0.000252989s
+2019-04-12T01:58:52.441Z [INFO] 10.244.6.148:46839 - 5552 "A IN localhost.cluster.local. udp 41 false 512" NXDOMAIN qr,rd,ra 134 0.000132852s
+2019-04-12T01:58:52.441Z [INFO] 10.244.6.148:37984 - 33950 "AAAA IN localhost.cluster.local. udp 41 false 512" NXDOMAIN qr,rd,ra 134 0.000292424s
+2019-04-12T01:58:52.444Z [INFO] 10.244.6.148:40022 - 58248 "A IN localhost. udp 27 false 512" NXDOMAIN qr,rd,ra 103 0.000098317s
+2019-04-12T01:58:52.481Z [INFO] 10.244.6.148:51592 - 10957 "AAAA IN localhost. udp 27 false 512" NXDOMAIN qr,rd,ra 103 0.037005985s
+2019-04-12T01:58:54.678Z [INFO] 10.244.6.155:48569 - 55103 "A IN redis.nexclipper.svc.cluster.local. udp 52 false 512" NOERROR qr,aa,rd,ra 102 0.000202352s
+2019-04-12T01:59:00.129Z [INFO] 10.244.1.244:47395 - 26537 "AAAA IN grafana.com.svc.cluster.local. udp 47 false 512" NXDOMAIN qr,aa,rd,ra 140 0.000206653s
+2019-04-12T01:59:00.13Z [INFO] 10.244.1.244:48691 - 26198 "A IN grafana.com.cluster.local. udp 43 false 512" NXDOMAIN qr,aa,rd,ra 136 0.000164939s
+2019-04-12T01:59:00.13Z [INFO] 10.244.1.244:45067 - 43716 "AAAA IN grafana.com.cluster.local. udp 43 false 512" NXDOMAIN qr,aa,rd,ra 136 0.000100637s
+2019-04-12T01:59:00.162Z [INFO] 10.244.1.244:43579 - 46784 "A IN grafana.com. udp 29 false 512" NOERROR qr,rd,ra 56 0.030871291s
+2019-04-12T01:59:00.162Z [INFO] 10.244.1.244:36808 - 52947 "AAAA IN grafana.com. udp 29 false 512" NOERROR qr,rd,ra 114 0.031334706s
+2019-04-12T01:59:00.435Z [INFO] 10.244.1.244:47987 - 54397 "AAAA IN raw.githubusercontent.com.cluster.local. udp 57 false 512" NXDOMAIN qr,aa,rd,ra 150 0.00017849s
+2019-04-12T01:59:00.512Z [INFO] 10.244.1.244:58509 - 11107 "A IN raw.githubusercontent.com. udp 43 false 512" NOERROR qr,rd,ra 251 0.075463249s
+2019-04-12T01:59:00.619Z [INFO] 10.244.6.154:51306 - 61903 "A IN redis.nexclipper.svc.cluster.local. udp 52 false 512" NOERROR qr,aa,rd,ra 102 0.000223399s
+2019-04-12T01:59:01.122Z [INFO] 10.244.6.148:50732 - 56026 "A IN localhost.svc.cluster.local. udp 45 false 512" NXDOMAIN qr,rd,ra 138 0.000196243s
+2019-04-12T01:59:01.122Z [INFO] 10.244.6.148:58029 - 35278 "AAAA IN localhost.svc.cluster.local. udp 45 false 512" NXDOMAIN qr,rd,ra 138 0.000424229s
+2019-04-12T01:59:01.126Z [INFO] 10.244.6.148:35979 - 24539 "A IN localhost. udp 27 false 512" NXDOMAIN qr,rd,ra 103 0.000137564s
+2019-04-12T01:59:02.367Z [INFO] 10.244.6.148:44682 - 31066 "AAAA IN localhost.cattle-prometheus.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,rd,ra 156 0.00018838s
+2019-04-12T01:59:02.367Z [INFO] 10.244.6.148:35937 - 13539 "A IN localhost.cattle-prometheus.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,rd,ra 156 0.000108495s
+2019-04-12T01:59:02.37Z [INFO] 10.244.6.148:56369 - 28928 "AAAA IN localhost.svc.cluster.local. udp 45 false 512" NXDOMAIN qr,rd,ra 138 0.000118247s
+2019-04-12T01:59:02.372Z [INFO] 10.244.6.148:54542 - 55589 "A IN localhost.cluster.local. udp 41 false 512" NXDOMAIN qr,rd,ra 134 0.00010823s
+2019-04-12T01:59:02.374Z [INFO] 10.244.6.148:42726 - 19251 "AAAA IN localhost. udp 27 false 512" NXDOMAIN qr,rd,ra 103 0.000094379s
+2019-04-12T01:59:04.153Z [INFO] 10.244.5.97:51836 - 22498 "A IN www.nexclipper.com.cluster.local. udp 50 false 512" NXDOMAIN qr,aa,rd,ra 143 0.000254861s
+2019-04-12T01:59:04.575Z [INFO] 10.244.5.97:60275 - 28502 "A IN www.nexcloud.co.kr.nexclipper-saas.svc.cluster.local. udp 70 false 512" NXDOMAIN qr,aa,rd,ra 163 0.000334366s
+2019-04-12T01:59:04.579Z [INFO] 10.244.5.97:55806 - 39516 "A IN www.nexcloud.co.kr.svc.cluster.local. udp 54 false 512" NXDOMAIN qr,aa,rd,ra 147 0.000227208s
+2019-04-12T01:59:05.102Z [INFO] 10.244.5.97:36921 - 11850 "A IN server.nexclipper.com.nexclipper-saas.svc.cluster.local. udp 73 false 512" NXDOMAIN qr,aa,rd,ra 166 0.000237143s
+2019-04-12T01:59:05.103Z [INFO] 10.244.5.97:34583 - 36515 "A IN server.nexclipper.com.svc.cluster.local. udp 57 false 512" NXDOMAIN qr,aa,rd,ra 150 0.000180699s
+2019-04-12T01:59:05.104Z [INFO] 10.244.5.97:41711 - 588 "A IN server.nexclipper.com.cluster.local. udp 53 false 512" NXDOMAIN qr,aa,rd,ra 146 0.00016578s
+2019-04-12T01:59:05.179Z [INFO] 10.244.5.97:57047 - 19918 "A IN server.nexclipper.com. udp 39 false 512" NOERROR qr,rd,ra 76 0.073379827s
+2019-04-12T01:59:06.147Z [INFO] 10.244.5.97:50220 - 797 "A IN www.facebook.com.svc.cluster.local. udp 52 false 512" NXDOMAIN qr,aa,rd,ra 145 0.000312358s
+2019-04-12T01:59:06.148Z [INFO] 10.244.5.97:33308 - 11244 "A IN www.facebook.com.cluster.local. udp 48 false 512" NXDOMAIN qr,aa,rd,ra 141 0.00029428s
+2019-04-12T01:59:06.182Z [INFO] 10.244.5.97:42742 - 52689 "A IN www.facebook.com. udp 34 false 512" NOERROR qr,rd,ra 134 0.032099922s
+2019-04-12T01:59:08.886Z [INFO] 10.244.4.241:57948 - 52084 "A IN redis.nexclipper.svc.cluster.local. udp 52 false 512" NOERROR qr,aa,rd,ra 102 0.000203826s
+2019-04-12T01:59:11.4Z [INFO] 10.244.6.148:54523 - 8786 "AAAA IN localhost.cattle-prometheus.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,rd,ra 156 0.000255944s
+2019-04-12T01:59:11.402Z [INFO] 10.244.6.148:57952 - 6810 "A IN localhost.svc.cluster.local. udp 45 false 512" NXDOMAIN qr,aa,rd,ra 138 0.000241605s
+2019-04-12T01:59:11.404Z [INFO] 10.244.6.148:52367 - 19974 "A IN localhost.cluster.local. udp 41 false 512" NXDOMAIN qr,rd,ra 134 0.000123584s
+2019-04-12T01:59:12.375Z [INFO] 10.244.6.148:42827 - 33658 "A IN localhost.cattle-prometheus.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,rd,ra 156 0.00017971s
+2019-04-12T01:59:12.375Z [INFO] 10.244.6.148:49384 - 40075 "AAAA IN localhost.cattle-prometheus.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,rd,ra 156 0.000126136s
+2019-04-12T01:59:12.376Z [INFO] 10.244.6.148:39452 - 65316 "A IN localhost.svc.cluster.local. udp 45 false 512" NXDOMAIN qr,rd,ra 138 0.000125255s
+2019-04-12T01:59:12.377Z [INFO] 10.244.6.148:46908 - 22523 "AAAA IN localhost.cluster.local. udp 41 false 512" NXDOMAIN qr,rd,ra 134 0.000135997s
+2019-04-12T01:59:12.377Z [INFO] 10.244.6.148:47653 - 64799 "A IN localhost.cluster.local. udp 41 false 512" NXDOMAIN qr,rd,ra 134 0.000166279s
+2019-04-12T01:59:21.131Z [INFO] 10.244.6.148:32846 - 45951 "AAAA IN localhost.cattle-prometheus.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,aa,rd,ra 156 0.000294458s
+2019-04-12T01:59:21.141Z [INFO] 10.244.6.148:59917 - 55085 "AAAA IN localhost.cluster.local. udp 41 false 512" NXDOMAIN qr,aa,rd,ra 134 0.000258033s
+2019-04-12T01:59:21.141Z [INFO] 10.244.6.148:39228 - 63199 "A IN localhost.cluster.local. udp 41 false 512" NXDOMAIN qr,aa,rd,ra 134 0.000436507s
+2019-04-12T01:59:22.384Z [INFO] 10.244.6.148:38337 - 51165 "A IN localhost.cattle-prometheus.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,aa,rd,ra 156 0.000320623s
+2019-04-12T01:59:22.386Z [INFO] 10.244.6.148:49692 - 16260 "AAAA IN localhost.svc.cluster.local. udp 45 false 512" NXDOMAIN qr,aa,rd,ra 138 0.000612618s
+2019-04-12T01:59:22.387Z [INFO] 10.244.6.148:55282 - 13333 "AAAA IN localhost.cluster.local. udp 41 false 512" NXDOMAIN qr,rd,ra 134 0.00036487s
+2019-04-12T01:59:22.421Z [INFO] 10.244.6.148:52260 - 31152 "A IN localhost. udp 27 false 512" NXDOMAIN qr,rd,ra 103 0.03148018s
+2019-04-12T01:59:31.121Z [INFO] 10.244.6.148:52556 - 39042 "A IN localhost.cattle-prometheus.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,rd,ra 156 0.000209877s
+2019-04-12T01:59:31.126Z [INFO] 10.244.6.148:34411 - 48326 "A IN localhost. udp 27 false 512" NXDOMAIN qr,rd,ra 103 0.000103879s
+2019-04-12T01:59:34.933Z [INFO] 10.244.6.155:54507 - 41064 "A IN redis.nexclipper.svc.cluster.local. udp 52 false 512" NOERROR qr,aa,rd,ra 102 0.00019993s
+2019-04-12T01:59:35.626Z [INFO] 10.244.6.154:59453 - 19951 "A IN redis.nexclipper.nexclipper.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,aa,rd,ra 156 0.000252155s
+2019-04-12T01:59:40.654Z [INFO] 10.244.3.95:49945 - 5730 "A IN collector.nexclipper-saas.svc.cluster.local. udp 61 false 512" NOERROR qr,aa,rd,ra 120 0.000277072s
+2019-04-12T01:59:45.829Z [INFO] 10.244.3.95:57480 - 30726 "A IN nexrouter.nexclipper-saas.nexclipper-saas.svc.cluster.local. udp 77 false 512" NXDOMAIN qr,aa,rd,ra 170 0.000234487s
+2019-04-12T01:59:45.831Z [INFO] 10.244.3.95:39037 - 34054 "A IN nexrouter.nexclipper-saas.svc.cluster.local. udp 61 false 512" NOERROR qr,aa,rd,ra 120 0.00013049s
+2019-04-12T01:59:47.171Z [INFO] 10.244.4.233:51970 - 24353 "AAAA IN grafana.com.devleesk.svc.cluster.local. udp 56 false 512" NXDOMAIN qr,aa,rd,ra 149 0.000270715s
+2019-04-12T01:59:47.224Z [INFO] 10.244.4.233:41915 - 7767 "A IN grafana.com.svc.cluster.local. udp 47 false 512" NXDOMAIN qr,aa,rd,ra 140 0.000303792s
+2019-04-12T01:59:47.224Z [INFO] 10.244.4.233:44993 - 37829 "AAAA IN grafana.com.svc.cluster.local. udp 47 false 512" NXDOMAIN qr,aa,rd,ra 140 0.000181533s
+2019-04-12T01:59:47.226Z [INFO] 10.244.4.233:38247 - 22923 "A IN grafana.com.cluster.local. udp 43 false 512" NXDOMAIN qr,aa,rd,ra 136 0.000269125s
+2019-04-12T01:59:47.227Z [INFO] 10.244.4.233:44520 - 33338 "AAAA IN grafana.com.cluster.local. udp 43 false 512" NXDOMAIN qr,aa,rd,ra 136 0.000339864s
+2019-04-12T01:59:47.261Z [INFO] 10.244.4.233:55875 - 40705 "A IN grafana.com. udp 29 false 512" NOERROR qr,rd,ra 56 0.031868414s
+2019-04-12T01:59:48.342Z [INFO] 10.244.4.233:59911 - 65523 "AAAA IN raw.githubusercontent.com.svc.cluster.local. udp 61 false 512" NXDOMAIN qr,aa,rd,ra 154 0.000211819s
+2019-04-12T01:59:48.346Z [INFO] 10.244.4.233:57105 - 669 "A IN raw.githubusercontent.com.cluster.local. udp 57 false 512" NXDOMAIN qr,aa,rd,ra 150 0.000180505s
+2019-04-12T01:59:48.383Z [INFO] 10.244.4.233:44045 - 4753 "A IN raw.githubusercontent.com. udp 43 false 512" NOERROR qr,rd,ra 251 0.034336242s
+2019-04-12T01:59:50.803Z [INFO] 10.244.5.93:58819 - 1617 "A IN nexrouter.nexclipper-saas.svc.cluster.local. udp 61 false 512" NOERROR qr,rd,ra 120 0.000241626s
+2019-04-12T02:00:04.281Z [INFO] 10.244.5.97:38186 - 49021 "A IN www.nexclipper.com. udp 36 false 512" NOERROR qr,rd,ra 112 0.125750045s
+2019-04-12T02:00:04.523Z [INFO] 10.244.5.97:33318 - 53088 "A IN www.nexcloud.co.kr.nexclipper-saas.svc.cluster.local. udp 70 false 512" NXDOMAIN qr,aa,rd,ra 163 0.000205917s
+2019-04-12T02:00:04.597Z [INFO] 10.244.5.97:52638 - 29367 "A IN www.nexcloud.co.kr. udp 36 false 512" NOERROR qr,rd,ra 112 0.070854161s
+2019-04-12T02:00:04.97Z [INFO] 10.244.5.97:34903 - 45987 "A IN server.nexclipper.com.nexclipper-saas.svc.cluster.local. udp 73 false 512" NXDOMAIN qr,aa,rd,ra 166 0.000314984s
+2019-04-12T02:00:05.168Z [INFO] 10.244.5.97:49660 - 43745 "A IN server.nexclipper.com.cluster.local. udp 53 false 512" NXDOMAIN qr,aa,rd,ra 146 0.00024971s
+2019-04-12T02:00:13.702Z [INFO] 10.244.6.154:37856 - 19033 "A IN influx.nexclipper.nexclipper.svc.cluster.local. udp 64 false 512" NXDOMAIN qr,aa,rd,ra 157 0.000212761s
+2019-04-12T02:00:15.837Z [INFO] 10.244.3.95:36508 - 61441 "A IN nexrouter.nexclipper-saas.nexclipper-saas.svc.cluster.local. udp 77 false 512" NXDOMAIN qr,aa,rd,ra 170 0.000293849s
+2019-04-12T02:00:18.748Z [INFO] 10.244.4.241:46292 - 18681 "A IN redis.nexclipper.nexclipper.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,aa,rd,ra 156 0.00020688s
+2019-04-12T02:00:21.204Z [INFO] 10.244.5.93:51906 - 56359 "A IN nexrouter.nexclipper-saas.nexclipper-saas.svc.cluster.local. udp 77 false 512" NXDOMAIN qr,rd,ra 170 0.000248636s
+2019-04-12T02:00:49.006Z [INFO] 10.244.4.241:35889 - 46442 "A IN redis.nexclipper.nexclipper.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,aa,rd,ra 156 0.000279627s
+2019-04-12T02:00:50.989Z [INFO] 10.244.6.155:36866 - 43447 "A IN redis.nexclipper.nexclipper.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,rd,ra 156 0.000201614s
+2019-04-12T02:00:50.991Z [INFO] 10.244.6.155:48575 - 43309 "A IN redis.nexclipper.svc.cluster.local. udp 52 false 512" NOERROR qr,aa,rd,ra 102 0.000264139s
+2019-04-12T02:00:50.998Z [INFO] 10.244.6.154:53758 - 29652 "A IN redis.nexclipper.nexclipper.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,rd,ra 156 0.000118339s
+2019-04-12T02:00:51.234Z [INFO] 10.244.5.93:40715 - 29963 "A IN nexrouter.nexclipper-saas.nexclipper-saas.svc.cluster.local. udp 77 false 512" NXDOMAIN qr,aa,rd,ra 170 0.000244805s
+2019-04-12T02:00:51.262Z [INFO] 10.244.5.93:39782 - 51342 "A IN nexrouter.nexclipper-saas.svc.cluster.local. udp 61 false 512" NOERROR qr,aa,rd,ra 120 0.000220626s
+2019-04-12T02:00:57.38Z [INFO] 10.244.2.112:60177 - 47538 "A IN mysql.nexclipper-saas.svc.cluster.local. udp 57 false 512" NOERROR qr,aa,rd,ra 112 0.000214366s
+2019-04-12T02:01:03.382Z [INFO] 10.244.6.154:56690 - 48709 "A IN influx.nexclipper.nexclipper.svc.cluster.local. udp 64 false 512" NXDOMAIN qr,aa,rd,ra 157 0.00028287s
+2019-04-12T02:01:04.231Z [INFO] 10.244.5.97:46785 - 15434 "A IN www.nexclipper.com. udp 36 false 512" NOERROR qr,rd,ra 112 0.073127183s
+2019-04-12T02:01:04.537Z [INFO] 10.244.5.97:43766 - 631 "A IN www.nexcloud.co.kr.svc.cluster.local. udp 54 false 512" NXDOMAIN qr,aa,rd,ra 147 0.000313441s
+2019-04-12T02:01:04.87Z [INFO] 10.244.5.97:50177 - 63540 "A IN server.nexclipper.com.nexclipper-saas.svc.cluster.local. udp 73 false 512" NXDOMAIN qr,aa,rd,ra 166 0.000298747s
+2019-04-12T02:01:04.889Z [INFO] 10.244.5.97:49867 - 39267 "A IN server.nexclipper.com.svc.cluster.local. udp 57 false 512" NXDOMAIN qr,aa,rd,ra 150 0.000308923s
+2019-04-12T02:01:04.891Z [INFO] 10.244.5.97:45282 - 1738 "A IN server.nexclipper.com.cluster.local. udp 53 false 512" NXDOMAIN qr,aa,rd,ra 146 0.000228232s
+2019-04-12T02:01:06.088Z [INFO] 10.244.5.97:40060 - 54182 "A IN www.facebook.com.svc.cluster.local. udp 52 false 512" NXDOMAIN qr,aa,rd,ra 145 0.000151442s
+2019-04-12T02:01:06.122Z [INFO] 10.244.5.97:52677 - 62865 "A IN www.facebook.com. udp 34 false 512" NOERROR qr,rd,ra 134 0.031170716s
+2019-04-12T02:01:15.866Z [INFO] 10.244.3.95:34690 - 9464 "A IN nexrouter.nexclipper-saas.svc.cluster.local. udp 61 false 512" NOERROR qr,aa,rd,ra 120 0.000185667s
+2019-04-12T02:01:20.82Z [INFO] 10.244.4.241:35372 - 30411 "A IN redis.nexclipper.nexclipper.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,aa,rd,ra 156 0.000295162s
+2019-04-12T02:01:21.338Z [INFO] 10.244.5.93:42018 - 9018 "A IN nexrouter.nexclipper-saas.svc.cluster.local. udp 61 false 512" NOERROR qr,aa,rd,ra 120 0.000238131s
+2019-04-12T02:01:31.224Z [INFO] 10.244.6.154:48617 - 17557 "A IN redis.nexclipper.nexclipper.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,rd,ra 156 0.000230733s
+2019-04-12T02:01:36.15Z [INFO] 10.244.6.154:34387 - 344 "A IN influx.nexclipper.svc.cluster.local. udp 53 false 512" NOERROR qr,aa,rd,ra 104 0.000226257s
+2019-04-12T02:01:45.908Z [INFO] 10.244.3.95:38180 - 44725 "A IN nexrouter.nexclipper-saas.nexclipper-saas.svc.cluster.local. udp 77 false 512" NXDOMAIN qr,aa,rd,ra 170 0.000241042s
+2019-04-12T02:01:51.346Z [INFO] 10.244.5.93:36767 - 47264 "A IN nexrouter.nexclipper-saas.nexclipper-saas.svc.cluster.local. udp 77 false 512" NXDOMAIN qr,rd,ra 170 0.000247574s
+2019-04-12T02:01:56.651Z [INFO] 10.244.6.155:41002 - 5769 "A IN redis.nexclipper.nexclipper.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,aa,rd,ra 156 0.000289111s
+2019-04-12T02:01:56.781Z [INFO] 10.244.6.155:40915 - 53705 "A IN redis.nexclipper.svc.cluster.local. udp 52 false 512" NOERROR qr,aa,rd,ra 102 0.000249455s
+2019-04-12T02:02:04.212Z [INFO] 10.244.5.97:46993 - 32400 "A IN www.nexclipper.com.cluster.local. udp 50 false 512" NXDOMAIN qr,aa,rd,ra 143 0.000349809s
+2019-04-12T02:02:04.601Z [INFO] 10.244.5.97:48481 - 22292 "A IN www.nexcloud.co.kr.svc.cluster.local. udp 54 false 512" NXDOMAIN qr,aa,rd,ra 147 0.00027043s
+2019-04-12T02:02:04.798Z [INFO] 10.244.5.97:54389 - 43649 "A IN www.nexcloud.co.kr. udp 36 false 512" NOERROR qr,rd,ra 112 0.195554464s
+2019-04-12T02:02:05.004Z [INFO] 10.244.5.97:53173 - 48227 "A IN server.nexclipper.com.svc.cluster.local. udp 57 false 512" NXDOMAIN qr,aa,rd,ra 150 0.000176787s
+2019-04-12T02:02:05.005Z [INFO] 10.244.5.97:33526 - 16307 "A IN server.nexclipper.com.cluster.local. udp 53 false 512" NXDOMAIN qr,aa,rd,ra 146 0.000129702s
+2019-04-12T02:02:05.079Z [INFO] 10.244.5.97:50099 - 34761 "A IN server.nexclipper.com. udp 39 false 512" NOERROR qr,rd,ra 76 0.072371269s
+2019-04-12T02:02:07.215Z [INFO] 10.244.5.97:41268 - 55410 "A IN www.facebook.com.nexclipper-saas.svc.cluster.local. udp 68 false 512" NXDOMAIN qr,aa,rd,ra 161 0.000294205s
+2019-04-12T02:02:07.333Z [INFO] 10.244.5.97:50274 - 38142 "A IN www.facebook.com.svc.cluster.local. udp 52 false 512" NXDOMAIN qr,aa,rd,ra 145 0.000286471s
+2019-04-12T02:02:07.381Z [INFO] 10.244.5.97:51902 - 27309 "A IN www.facebook.com. udp 34 false 512" NOERROR qr,rd,ra 134 0.031296746s
+2019-04-12T02:02:11.615Z [INFO] 10.244.6.154:35161 - 45665 "A IN redis.nexclipper.nexclipper.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,rd,ra 156 0.000144582s
+2019-04-12T02:02:11.669Z [INFO] 10.244.6.154:51268 - 16992 "A IN redis.nexclipper.svc.cluster.local. udp 52 false 512" NOERROR qr,aa,rd,ra 102 0.00024344s
+2019-04-12T02:02:13.294Z [INFO] 10.244.6.154:33517 - 36865 "A IN influx.nexclipper.svc.cluster.local. udp 53 false 512" NOERROR qr,aa,rd,ra 104 0.0002233s
+2019-04-12T02:02:15.914Z [INFO] 10.244.3.95:35352 - 59625 "A IN nexrouter.nexclipper-saas.nexclipper-saas.svc.cluster.local. udp 77 false 512" NXDOMAIN qr,aa,rd,ra 170 0.000303461s
+2019-04-12T02:02:21.379Z [INFO] 10.244.5.93:33964 - 61479 "A IN nexrouter.nexclipper-saas.nexclipper-saas.svc.cluster.local. udp 77 false 512" NXDOMAIN qr,rd,ra 170 0.000319415s
+2019-04-12T02:02:22.202Z [INFO] 10.244.4.241:38045 - 43647 "A IN redis.nexclipper.nexclipper.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,rd,ra 156 0.000209376s
+2019-04-12T02:02:37.209Z [INFO] 10.244.6.155:43096 - 49613 "A IN redis.nexclipper.nexclipper.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,aa,rd,ra 156 0.000219529s
+2019-04-12T02:02:42.083Z [INFO] 10.244.6.154:46227 - 4280 "A IN redis.nexclipper.nexclipper.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,rd,ra 156 0.000159673s
+2019-04-12T02:02:42.084Z [INFO] 10.244.6.154:41717 - 14894 "A IN redis.nexclipper.svc.cluster.local. udp 52 false 512" NOERROR qr,aa,rd,ra 102 0.000256183s
+2019-04-12T02:02:45.92Z [INFO] 10.244.3.95:39808 - 54848 "A IN nexrouter.nexclipper-saas.svc.cluster.local. udp 61 false 512" NOERROR qr,aa,rd,ra 120 0.000224813s
+2019-04-12T02:02:48.374Z [INFO] 10.244.6.154:45080 - 17297 "A IN influx.nexclipper.nexclipper.svc.cluster.local. udp 64 false 512" NXDOMAIN qr,aa,rd,ra 157 0.000490859s
+2019-04-12T02:02:48.416Z [INFO] 10.244.6.154:59216 - 32656 "A IN influx.nexclipper.svc.cluster.local. udp 53 false 512" NOERROR qr,aa,rd,ra 104 0.000317872s
+2019-04-12T02:02:52.222Z [INFO] 10.244.4.241:40239 - 55072 "A IN redis.nexclipper.nexclipper.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,rd,ra 156 0.000171177s
+2019-04-12T02:02:52.224Z [INFO] 10.244.4.241:51902 - 30357 "A IN redis.nexclipper.svc.cluster.local. udp 52 false 512" NOERROR qr,aa,rd,ra 102 0.000314394s
+2019-04-12T02:03:04.203Z [INFO] 10.244.5.97:40504 - 39923 "A IN www.nexclipper.com.nexclipper-saas.svc.cluster.local. udp 70 false 512" NXDOMAIN qr,aa,rd,ra 163 0.00028537s
+2019-04-12T02:03:04.204Z [INFO] 10.244.5.97:57907 - 1790 "A IN www.nexclipper.com.svc.cluster.local. udp 54 false 512" NXDOMAIN qr,aa,rd,ra 147 0.000176604s
+2019-04-12T02:03:04.342Z [INFO] 10.244.5.97:40603 - 17042 "A IN www.nexclipper.com. udp 36 false 512" NOERROR qr,rd,ra 112 0.072941586s
+2019-04-12T02:03:04.611Z [INFO] 10.244.5.97:59812 - 52840 "A IN www.nexcloud.co.kr.nexclipper-saas.svc.cluster.local. udp 70 false 512" NXDOMAIN qr,aa,rd,ra 163 0.000300537s
+2019-04-12T02:03:04.612Z [INFO] 10.244.5.97:39260 - 46794 "A IN www.nexcloud.co.kr.svc.cluster.local. udp 54 false 512" NXDOMAIN qr,aa,rd,ra 147 0.000186017s
+2019-04-12T02:03:04.613Z [INFO] 10.244.5.97:34918 - 24028 "A IN www.nexcloud.co.kr.cluster.local. udp 50 false 512" NXDOMAIN qr,aa,rd,ra 143 0.00016915s
+2019-04-12T02:03:04.689Z [INFO] 10.244.5.97:37348 - 52225 "A IN www.nexcloud.co.kr. udp 36 false 512" NOERROR qr,rd,ra 112 0.075388401s
+2019-04-12T02:03:04.946Z [INFO] 10.244.5.97:46511 - 61502 "A IN server.nexclipper.com.cluster.local. udp 53 false 512" NXDOMAIN qr,aa,rd,ra 146 0.000393826s
+2019-04-12T02:03:05.022Z [INFO] 10.244.5.97:42769 - 1628 "A IN server.nexclipper.com. udp 39 false 512" NOERROR qr,rd,ra 76 0.075267375s
+2019-04-12T02:03:06.626Z [INFO] 10.244.5.97:49074 - 5930 "A IN www.facebook.com.nexclipper-saas.svc.cluster.local. udp 68 false 512" NXDOMAIN qr,aa,rd,ra 161 0.000220524s
+2019-04-12T02:03:06.702Z [INFO] 10.244.5.97:46856 - 19947 "A IN www.facebook.com.cluster.local. udp 48 false 512" NXDOMAIN qr,aa,rd,ra 141 0.000154629s
+2019-04-12T02:03:07.454Z [INFO] 10.244.6.155:51209 - 23294 "A IN redis.nexclipper.nexclipper.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,aa,rd,ra 156 0.00039357s
+2019-04-12T02:03:07.457Z [INFO] 10.244.6.155:52458 - 27702 "A IN redis.nexclipper.svc.cluster.local. udp 52 false 512" NOERROR qr,aa,rd,ra 102 0.000191086s
+2019-04-12T02:03:15.925Z [INFO] 10.244.3.95:54213 - 28572 "A IN nexrouter.nexclipper-saas.nexclipper-saas.svc.cluster.local. udp 77 false 512" NXDOMAIN qr,aa,rd,ra 170 0.000209639s
+2019-04-12T02:03:17.157Z [INFO] 10.244.6.154:43518 - 20744 "A IN redis.nexclipper.nexclipper.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,rd,ra 156 0.000165263s
+2019-04-12T02:03:17.169Z [INFO] 10.244.6.154:55644 - 44112 "A IN redis.nexclipper.svc.cluster.local. udp 52 false 512" NOERROR qr,aa,rd,ra 102 0.000195329s
+2019-04-12T02:03:18.353Z [INFO] 10.244.3.95:33686 - 31871 "A IN collector.nexclipper-saas.nexclipper-saas.svc.cluster.local. udp 77 false 512" NXDOMAIN qr,aa,rd,ra 170 0.000212509s
+2019-04-12T02:03:21.436Z [INFO] 10.244.5.93:50146 - 30139 "A IN nexrouter.nexclipper-saas.nexclipper-saas.svc.cluster.local. udp 77 false 512" NXDOMAIN qr,rd,ra 170 0.000197708s
+2019-04-12T02:03:22.27Z [INFO] 10.244.4.241:51488 - 18688 "A IN redis.nexclipper.svc.cluster.local. udp 52 false 512" NOERROR qr,aa,rd,ra 102 0.000362447s
+2019-04-12T02:03:31.006Z [INFO] 10.244.6.154:34055 - 36698 "A IN influx.nexclipper.nexclipper.svc.cluster.local. udp 64 false 512" NXDOMAIN qr,aa,rd,ra 157 0.000457735s
+2019-04-12T02:03:40.452Z [INFO] 10.244.2.112:55020 - 50424 "A IN mysql.nexclipper-saas.nexclipper-saas.svc.cluster.local. udp 73 false 512" NXDOMAIN qr,aa,rd,ra 166 0.000362113s
+2019-04-12T02:03:46.025Z [INFO] 10.244.3.95:38663 - 22506 "A IN nexrouter.nexclipper-saas.svc.cluster.local. udp 61 false 512" NOERROR qr,aa,rd,ra 120 0.000211943s
+2019-04-12T02:03:51.424Z [INFO] 10.244.3.95:54781 - 22 "A IN collector.nexclipper-saas.nexclipper-saas.svc.cluster.local. udp 77 false 512" NXDOMAIN qr,aa,rd,ra 170 0.000409219s
+2019-04-12T02:03:51.425Z [INFO] 10.244.3.95:55458 - 62322 "A IN collector.nexclipper-saas.svc.cluster.local. udp 61 false 512" NOERROR qr,aa,rd,ra 120 0.000190386s
+2019-04-12T02:03:51.481Z [INFO] 10.244.5.93:34578 - 46852 "A IN nexrouter.nexclipper-saas.nexclipper-saas.svc.cluster.local. udp 77 false 512" NXDOMAIN qr,aa,rd,ra 170 0.000282647s
+2019-04-12T02:03:52.101Z [INFO] 10.244.6.154:42658 - 3416 "A IN redis.nexclipper.nexclipper.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,aa,rd,ra 156 0.000222327s
+2019-04-12T02:03:52.103Z [INFO] 10.244.6.154:49800 - 19485 "A IN redis.nexclipper.svc.cluster.local. udp 52 false 512" NOERROR qr,aa,rd,ra 102 0.000262143s
+2019-04-12T02:03:52.28Z [INFO] 10.244.4.241:57925 - 35521 "A IN redis.nexclipper.nexclipper.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,rd,ra 156 0.000149248s
+2019-04-12T02:04:04.448Z [INFO] 10.244.5.97:52940 - 44962 "A IN www.nexclipper.com.nexclipper-saas.svc.cluster.local. udp 70 false 512" NXDOMAIN qr,aa,rd,ra 163 0.000279095s
+2019-04-12T02:04:04.904Z [INFO] 10.244.5.97:32769 - 61617 "A IN www.nexclipper.com.svc.cluster.local. udp 54 false 512" NXDOMAIN qr,aa,rd,ra 147 0.000248309s
+2019-04-12T02:04:04.932Z [INFO] 10.244.5.97:47579 - 45838 "A IN www.nexclipper.com.cluster.local. udp 50 false 512" NXDOMAIN qr,aa,rd,ra 143 0.00019987s
+2019-04-12T02:04:05.408Z [INFO] 10.244.5.97:50426 - 1579 "A IN www.nexcloud.co.kr.nexclipper-saas.svc.cluster.local. udp 70 false 512" NXDOMAIN qr,aa,rd,ra 163 0.000189871s
+2019-04-12T02:04:05.409Z [INFO] 10.244.5.97:57399 - 32217 "A IN www.nexcloud.co.kr.svc.cluster.local. udp 54 false 512" NXDOMAIN qr,aa,rd,ra 147 0.00014908s
+2019-04-12T02:04:05.41Z [INFO] 10.244.5.97:48683 - 60186 "A IN www.nexcloud.co.kr.cluster.local. udp 50 false 512" NXDOMAIN qr,aa,rd,ra 143 0.000108378s
+2019-04-12T02:04:05.61Z [INFO] 10.244.5.97:53705 - 17580 "A IN www.nexcloud.co.kr. udp 36 false 512" NOERROR qr,rd,ra 112 0.198905578s
+2019-04-12T02:04:07.819Z [INFO] 10.244.5.97:50247 - 35202 "A IN server.nexclipper.com.svc.cluster.local. udp 57 false 512" NXDOMAIN qr,aa,rd,ra 150 0.000181846s
+2019-04-12T02:04:07.82Z [INFO] 10.244.5.97:57627 - 41341 "A IN server.nexclipper.com.cluster.local. udp 53 false 512" NXDOMAIN qr,aa,rd,ra 146 0.000126413s
+2019-04-12T02:04:07.954Z [INFO] 10.244.5.97:54421 - 31823 "A IN server.nexclipper.com. udp 39 false 512" NOERROR qr,rd,ra 76 0.133014113s
+2019-04-12T02:04:10.26Z [INFO] 10.244.5.97:50566 - 25693 "A IN www.facebook.com.nexclipper-saas.svc.cluster.local. udp 68 false 512" NXDOMAIN qr,aa,rd,ra 161 0.000291992s
+2019-04-12T02:04:10.263Z [INFO] 10.244.5.97:47081 - 60418 "A IN www.facebook.com.cluster.local. udp 48 false 512" NXDOMAIN qr,aa,rd,ra 141 0.000334673s
+2019-04-12T02:04:10.353Z [INFO] 10.244.5.97:57971 - 39984 "A IN www.facebook.com. udp 34 false 512" NOERROR qr,rd,ra 134 0.088847292s
+2019-04-12T02:04:12.697Z [INFO] 10.244.6.155:34923 - 45583 "A IN redis.nexclipper.nexclipper.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,rd,ra 156 0.000301422s
+2019-04-12T02:04:16.03Z [INFO] 10.244.3.95:55131 - 10986 "A IN nexrouter.nexclipper-saas.nexclipper-saas.svc.cluster.local. udp 77 false 512" NXDOMAIN qr,rd,ra 170 0.000124531s
+2019-04-12T02:04:16.031Z [INFO] 10.244.3.95:36679 - 42106 "A IN nexrouter.nexclipper-saas.svc.cluster.local. udp 61 false 512" NOERROR qr,aa,rd,ra 120 0.000163398s
+2019-04-12T02:04:22.285Z [INFO] 10.244.4.241:53995 - 46803 "A IN redis.nexclipper.nexclipper.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,aa,rd,ra 156 0.000459292s
+2019-04-12T02:04:22.425Z [INFO] 10.244.6.154:49350 - 38256 "A IN redis.nexclipper.nexclipper.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,rd,ra 156 0.000242298s
+2019-04-12T02:04:25.527Z [INFO] 10.244.6.148:53426 - 45130 "AAAA IN alertmanager-operated.cattle-prometheus.cluster.local. udp 71 false 512" NXDOMAIN qr,aa,rd,ra 164 0.000138805s
+2019-04-12T02:04:25.528Z [INFO] 10.244.6.148:39904 - 39295 "A IN alertmanager-operated.cattle-prometheus.cluster.local. udp 71 false 512" NXDOMAIN qr,aa,rd,ra 164 0.000342216s
+2019-04-12T02:04:25.602Z [INFO] 10.244.6.148:48421 - 37580 "A IN alertmanager-operated.cattle-prometheus. udp 57 false 512" NXDOMAIN qr,rd,ra 133 0.072910229s
+2019-04-12T02:04:39.08Z [INFO] 10.244.6.148:58563 - 50775 "A IN localhost.svc.cluster.local. udp 45 false 512" NXDOMAIN qr,aa,rd,ra 138 0.000236638s
+2019-04-12T02:04:42.323Z [INFO] 10.244.6.154:56658 - 23103 "A IN influx.nexclipper.nexclipper.svc.cluster.local. udp 64 false 512" NXDOMAIN qr,aa,rd,ra 157 0.000349615s
+2019-04-12T02:04:51.221Z [INFO] 10.244.6.148:38769 - 47226 "AAAA IN localhost.svc.cluster.local. udp 45 false 512" NXDOMAIN qr,aa,rd,ra 138 0.000346714s
+2019-04-12T02:04:51.241Z [INFO] 10.244.6.148:59974 - 3755 "A IN localhost.cluster.local. udp 41 false 512" NXDOMAIN qr,aa,rd,ra 134 0.000409622s
+2019-04-12T02:04:51.241Z [INFO] 10.244.6.148:42898 - 10664 "AAAA IN localhost.cluster.local. udp 41 false 512" NXDOMAIN qr,aa,rd,ra 134 0.000388929s
+2019-04-12T02:04:51.288Z [INFO] 10.244.6.148:53246 - 5029 "A IN localhost. udp 27 false 512" NXDOMAIN qr,rd,ra 103 0.040793741s
+2019-04-12T02:04:51.656Z [INFO] 10.244.5.93:59121 - 9053 "A IN nexrouter.nexclipper-saas.nexclipper-saas.svc.cluster.local. udp 77 false 512" NXDOMAIN qr,aa,rd,ra 170 0.00033341s
+2019-04-12T02:04:51.658Z [INFO] 10.244.5.93:35468 - 61176 "A IN nexrouter.nexclipper-saas.svc.cluster.local. udp 61 false 512" NOERROR qr,aa,rd,ra 120 0.00030476s
+2019-04-12T02:04:52.29Z [INFO] 10.244.4.241:42989 - 5726 "A IN redis.nexclipper.nexclipper.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,aa,rd,ra 156 0.000442593s
+2019-04-12T02:04:52.37Z [INFO] 10.244.6.148:50262 - 32188 "A IN localhost.cattle-prometheus.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,aa,rd,ra 156 0.000323012s
+2019-04-12T02:04:52.37Z [INFO] 10.244.6.148:48164 - 14219 "AAAA IN localhost.cattle-prometheus.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,aa,rd,ra 156 0.000303291s
+2019-04-12T02:04:52.374Z [INFO] 10.244.6.148:57226 - 39189 "A IN localhost.svc.cluster.local. udp 45 false 512" NXDOMAIN qr,rd,ra 138 0.000157157s
+2019-04-12T02:04:52.374Z [INFO] 10.244.6.148:35376 - 53185 "AAAA IN localhost.svc.cluster.local. udp 45 false 512" NXDOMAIN qr,rd,ra 138 0.000124034s
+2019-04-12T02:04:52.417Z [INFO] 10.244.6.148:54283 - 27908 "AAAA IN localhost. udp 27 false 512" NXDOMAIN qr,rd,ra 103 0.039579838s
+2019-04-12T02:05:01.121Z [INFO] 10.244.6.148:52092 - 61680 "A IN localhost.cattle-prometheus.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,rd,ra 156 0.000170221s
+2019-04-12T02:05:02.367Z [INFO] 10.244.6.148:43945 - 10455 "AAAA IN localhost.cattle-prometheus.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,rd,ra 156 0.000203105s
+2019-04-12T02:05:02.372Z [INFO] 10.244.6.148:40289 - 61762 "AAAA IN localhost.svc.cluster.local. udp 45 false 512" NXDOMAIN qr,rd,ra 138 0.000167152s
+2019-04-12T02:05:02.373Z [INFO] 10.244.6.148:56912 - 11458 "AAAA IN localhost.cluster.local. udp 41 false 512" NXDOMAIN qr,rd,ra 134 0.000118465s
+2019-04-12T02:05:02.374Z [INFO] 10.244.6.148:43127 - 63349 "A IN localhost.cluster.local. udp 41 false 512" NXDOMAIN qr,rd,ra 134 0.000105586s
+2019-04-12T02:05:02.375Z [INFO] 10.244.6.148:37451 - 46931 "AAAA IN localhost. udp 27 false 512" NXDOMAIN qr,rd,ra 103 0.000114924s
+2019-04-12T02:05:04.44Z [INFO] 10.244.5.97:42709 - 5412 "A IN www.nexclipper.com.nexclipper-saas.svc.cluster.local. udp 70 false 512" NXDOMAIN qr,aa,rd,ra 163 0.000310309s
+2019-04-12T02:05:07.44Z [INFO] 10.244.5.97:33941 - 19587 "A IN www.nexcloud.co.kr.svc.cluster.local. udp 54 false 512" NXDOMAIN qr,aa,rd,ra 147 0.000160566s
+2019-04-12T02:05:07.441Z [INFO] 10.244.5.97:55551 - 39006 "A IN www.nexcloud.co.kr.cluster.local. udp 50 false 512" NXDOMAIN qr,aa,rd,ra 143 0.00015603s
+2019-04-12T02:05:07.521Z [INFO] 10.244.5.97:40102 - 332 "A IN www.nexcloud.co.kr. udp 36 false 512" NOERROR qr,rd,ra 112 0.078962929s
+2019-04-12T02:05:08.01Z [INFO] 10.244.5.97:59324 - 31701 "A IN server.nexclipper.com.nexclipper-saas.svc.cluster.local. udp 73 false 512" NXDOMAIN qr,aa,rd,ra 166 0.000303531s
+2019-04-12T02:05:09.269Z [INFO] 10.244.5.97:55640 - 22822 "A IN www.facebook.com.nexclipper-saas.svc.cluster.local. udp 68 false 512" NXDOMAIN qr,aa,rd,ra 161 0.00023332s
+2019-04-12T02:05:09.27Z [INFO] 10.244.5.97:40617 - 59613 "A IN www.facebook.com.svc.cluster.local. udp 52 false 512" NXDOMAIN qr,aa,rd,ra 145 0.000183026s
+2019-04-12T02:05:09.329Z [INFO] 10.244.5.97:36840 - 37571 "A IN www.facebook.com.cluster.local. udp 48 false 512" NXDOMAIN qr,aa,rd,ra 141 0.000209746s
+2019-04-12T02:05:11.128Z [INFO] 10.244.6.148:48361 - 28227 "A IN localhost.cattle-prometheus.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,rd,ra 156 0.000227578s
+2019-04-12T02:05:11.131Z [INFO] 10.244.6.148:51584 - 41578 "A IN localhost.cluster.local. udp 41 false 512" NXDOMAIN qr,rd,ra 134 0.000096825s
+2019-04-12T02:05:11.132Z [INFO] 10.244.6.148:42280 - 36394 "AAAA IN localhost. udp 27 false 512" NXDOMAIN qr,rd,ra 103 0.000088494s
+2019-04-12T02:05:11.132Z [INFO] 10.244.6.148:44808 - 57925 "A IN localhost. udp 27 false 512" NXDOMAIN qr,rd,ra 103 0.00005783s
+2019-04-12T02:05:12.372Z [INFO] 10.244.6.148:34229 - 57003 "AAAA IN localhost.cattle-prometheus.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,rd,ra 156 0.000172365s
+2019-04-12T02:05:12.374Z [INFO] 10.244.6.148:44947 - 21092 "AAAA IN localhost.svc.cluster.local. udp 45 false 512" NXDOMAIN qr,rd,ra 138 0.000248755s
+2019-04-12T02:05:12.376Z [INFO] 10.244.6.148:53484 - 43426 "A IN localhost.cluster.local. udp 41 false 512" NXDOMAIN qr,rd,ra 134 0.000110819s
+2019-04-12T02:05:12.377Z [INFO] 10.244.6.148:51478 - 60617 "AAAA IN localhost. udp 27 false 512" NXDOMAIN qr,rd,ra 103 0.000174485s
+2019-04-12T02:05:12.377Z [INFO] 10.244.6.148:49166 - 57716 "A IN localhost. udp 27 false 512" NXDOMAIN qr,rd,ra 103 0.000073037s
+2019-04-12T02:05:16.251Z [INFO] 10.244.3.95:46199 - 59198 "A IN nexrouter.nexclipper-saas.nexclipper-saas.svc.cluster.local. udp 77 false 512" NXDOMAIN qr,rd,ra 170 0.000182895s
+2019-04-12T02:05:16.898Z [INFO] 10.244.2.112:32964 - 26407 "A IN mysql.nexclipper-saas.nexclipper-saas.svc.cluster.local. udp 73 false 512" NXDOMAIN qr,aa,rd,ra 166 0.000222106s
+2019-04-12T02:05:19.448Z [INFO] 10.244.6.154:53627 - 29466 "A IN influx.nexclipper.nexclipper.svc.cluster.local. udp 64 false 512" NXDOMAIN qr,aa,rd,ra 157 0.000342161s
+2019-04-12T02:05:19.449Z [INFO] 10.244.6.154:48020 - 52218 "A IN influx.nexclipper.svc.cluster.local. udp 53 false 512" NOERROR qr,aa,rd,ra 104 0.000236062s
+2019-04-12T02:05:21.122Z [INFO] 10.244.6.148:37769 - 37610 "A IN localhost.svc.cluster.local. udp 45 false 512" NXDOMAIN qr,aa,rd,ra 138 0.000225335s
+2019-04-12T02:05:21.123Z [INFO] 10.244.6.148:34797 - 39177 "A IN localhost.cluster.local. udp 41 false 512" NXDOMAIN qr,rd,ra 134 0.000157942s
+2019-04-12T02:05:21.124Z [INFO] 10.244.6.148:48846 - 11620 "AAAA IN localhost. udp 27 false 512" NXDOMAIN qr,rd,ra 103 0.000123087s
+2019-04-12T02:05:22.369Z [INFO] 10.244.6.148:51268 - 19689 "A IN localhost.svc.cluster.local. udp 45 false 512" NXDOMAIN qr,rd,ra 138 0.000162799s
+2019-04-12T02:05:22.371Z [INFO] 10.244.6.148:43714 - 40962 "A IN localhost.cluster.local. udp 41 false 512" NXDOMAIN qr,aa,rd,ra 134 0.000287561s
+2019-04-12T02:05:22.413Z [INFO] 10.244.4.241:39220 - 2899 "A IN redis.nexclipper.nexclipper.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,aa,rd,ra 156 0.000256327s
+2019-04-12T02:05:22.415Z [INFO] 10.244.6.148:41532 - 38468 "A IN localhost. udp 27 false 512" NXDOMAIN qr,rd,ra 103 0.042395593s
+2019-04-12T02:05:22.865Z [INFO] 10.244.6.155:51624 - 29326 "A IN redis.nexclipper.nexclipper.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,rd,ra 156 0.000321901s
+2019-04-12T02:05:29.889Z [INFO] 10.244.2.112:37323 - 28186 "A IN redis.nexclipper-saas.nexclipper-saas.svc.cluster.local. udp 73 false 512" NXDOMAIN qr,aa,rd,ra 166 0.000243523s
+2019-04-12T02:05:31.121Z [INFO] 10.244.6.148:57664 - 9658 "A IN localhost.svc.cluster.local. udp 45 false 512" NXDOMAIN qr,rd,ra 138 0.000130833s
+2019-04-12T02:05:31.122Z [INFO] 10.244.6.148:38083 - 22354 "AAAA IN localhost.svc.cluster.local. udp 45 false 512" NXDOMAIN qr,aa,rd,ra 138 0.000333943s
+2019-04-12T02:05:31.123Z [INFO] 10.244.6.148:50333 - 30262 "A IN localhost.cluster.local. udp 41 false 512" NXDOMAIN qr,rd,ra 134 0.000158637s
+2019-04-12T02:05:31.173Z [INFO] 10.244.6.148:60074 - 32531 "AAAA IN localhost. udp 27 false 512" NXDOMAIN qr,rd,ra 103 0.049377883s
+2019-04-12T02:05:32.384Z [INFO] 10.244.6.148:55737 - 26186 "A IN localhost.cattle-prometheus.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,aa,rd,ra 156 0.00035453s
+2019-04-12T02:05:32.388Z [INFO] 10.244.6.148:57037 - 44410 "AAAA IN localhost.svc.cluster.local. udp 45 false 512" NXDOMAIN qr,rd,ra 138 0.000167588s
+2019-04-12T02:05:32.39Z [INFO] 10.244.6.148:44934 - 6729 "A IN localhost.cluster.local. udp 41 false 512" NXDOMAIN qr,rd,ra 134 0.000167844s
+2019-04-12T02:05:32.39Z [INFO] 10.244.6.148:45506 - 6694 "AAAA IN localhost.cluster.local. udp 41 false 512" NXDOMAIN qr,aa,rd,ra 134 0.000296493s
+2019-04-12T02:05:32.451Z [INFO] 10.244.6.148:48600 - 38599 "A IN localhost. udp 27 false 512" NXDOMAIN qr,rd,ra 103 0.000215656s
+2019-04-12T02:05:41.121Z [INFO] 10.244.6.148:41753 - 25736 "AAAA IN localhost.cattle-prometheus.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,aa,rd,ra 156 0.000216988s
+2019-04-12T02:05:41.122Z [INFO] 10.244.6.148:37990 - 10151 "AAAA IN localhost.svc.cluster.local. udp 45 false 512" NXDOMAIN qr,rd,ra 138 0.000138173s
+2019-04-12T02:05:41.123Z [INFO] 10.244.6.148:59421 - 29327 "A IN localhost.cluster.local. udp 41 false 512" NXDOMAIN qr,rd,ra 134 0.000093307s
+2019-04-12T02:05:41.124Z [INFO] 10.244.6.148:55377 - 5097 "AAAA IN localhost. udp 27 false 512" NXDOMAIN qr,rd,ra 103 0.000138778s
+2019-04-12T02:05:41.124Z [INFO] 10.244.6.148:56472 - 43219 "A IN localhost. udp 27 false 512" NXDOMAIN qr,rd,ra 103 0.000132869s
+2019-04-12T02:05:42.718Z [INFO] 10.244.6.148:55316 - 1942 "A IN localhost.cattle-prometheus.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,rd,ra 156 0.000175508s
+2019-04-12T02:05:42.724Z [INFO] 10.244.6.148:40848 - 2662 "A IN localhost. udp 27 false 512" NXDOMAIN qr,rd,ra 103 0.000185882s
+2019-04-12T02:05:46.272Z [INFO] 10.244.3.95:40676 - 47756 "A IN nexrouter.nexclipper-saas.nexclipper-saas.svc.cluster.local. udp 77 false 512" NXDOMAIN qr,aa,rd,ra 170 0.000249125s
+2019-04-12T02:05:49.685Z [INFO] 10.244.2.112:57035 - 39240 "A IN mysql.nexclipper-saas.svc.cluster.local. udp 57 false 512" NOERROR qr,aa,rd,ra 112 0.000306833s
+2019-04-12T02:05:49.86Z [INFO] 10.244.6.154:35173 - 18705 "A IN influx.nexclipper.svc.cluster.local. udp 53 false 512" NOERROR qr,aa,rd,ra 104 0.000312571s
+2019-04-12T02:05:51.695Z [INFO] 10.244.5.93:37433 - 58511 "A IN nexrouter.nexclipper-saas.nexclipper-saas.svc.cluster.local. udp 77 false 512" NXDOMAIN qr,rd,ra 170 0.000200699s
+2019-04-12T02:05:51.697Z [INFO] 10.244.5.93:58455 - 5186 "A IN nexrouter.nexclipper-saas.svc.cluster.local. udp 61 false 512" NOERROR qr,aa,rd,ra 120 0.000236393s
+2019-04-12T02:05:52.368Z [INFO] 10.244.6.148:37427 - 11741 "A IN localhost.cattle-prometheus.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,rd,ra 156 0.000293411s
+2019-04-12T02:05:52.368Z [INFO] 10.244.6.148:43430 - 27542 "AAAA IN localhost.cattle-prometheus.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,rd,ra 156 0.00056801s
+2019-04-12T02:05:52.369Z [INFO] 10.244.6.148:41753 - 52815 "AAAA IN localhost.svc.cluster.local. udp 45 false 512" NXDOMAIN qr,rd,ra 138 0.000174104s
+2019-04-12T02:05:52.369Z [INFO] 10.244.6.148:60655 - 15572 "A IN localhost.svc.cluster.local. udp 45 false 512" NXDOMAIN qr,aa,rd,ra 138 0.000294312s
+2019-04-12T02:05:52.37Z [INFO] 10.244.6.148:55131 - 23282 "AAAA IN localhost.cluster.local. udp 41 false 512" NXDOMAIN qr,rd,ra 134 0.000211077s
+2019-04-12T02:05:52.371Z [INFO] 10.244.6.148:44975 - 40284 "A IN localhost.cluster.local. udp 41 false 512" NXDOMAIN qr,rd,ra 134 0.000364052s
+2019-04-12T02:05:52.372Z [INFO] 10.244.6.148:46494 - 13588 "AAAA IN localhost. udp 27 false 512" NXDOMAIN qr,rd,ra 103 0.000147772s
+2019-04-12T02:05:52.372Z [INFO] 10.244.6.148:60155 - 61686 "A IN localhost. udp 27 false 512" NXDOMAIN qr,rd,ra 103 0.000180019s
+2019-04-12T02:05:52.738Z [INFO] 10.244.4.241:44951 - 11250 "A IN redis.nexclipper.nexclipper.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,aa,rd,ra 156 0.000376214s
+2019-04-12T02:05:54.42Z [INFO] 10.244.3.95:40042 - 62699 "A IN collector.nexclipper-saas.nexclipper-saas.svc.cluster.local. udp 77 false 512" NXDOMAIN qr,aa,rd,ra 170 0.000297166s
+2019-04-12T02:05:54.42Z [INFO] 10.244.3.95:53143 - 4349 "A IN collector.nexclipper-saas.svc.cluster.local. udp 61 false 512" NOERROR qr,aa,rd,ra 120 0.000248742s
+2019-04-12T02:05:59.425Z [INFO] 10.244.6.155:52376 - 33956 "A IN redis.nexclipper.nexclipper.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,rd,ra 156 0.0002445s
+2019-04-12T02:05:59.431Z [INFO] 10.244.6.155:56920 - 57613 "A IN redis.nexclipper.svc.cluster.local. udp 52 false 512" NOERROR qr,aa,rd,ra 102 0.000307851s
+2019-04-12T02:06:01.122Z [INFO] 10.244.6.148:46675 - 55513 "A IN localhost.cattle-prometheus.svc.cluster.local. udp 63 false 512" NXDOMAIN qr,rd,ra 156 0.000153234s
+2019-04-12T02:06:01.654Z [INFO] 10.244.6.148:47166 - 19720 "AAAA IN localhost.svc.cluster.local. udp 45 false 512" NXDOMAIN qr,aa,rd,ra 138 0.000276518s
+2019-04-12T02:06:01.739Z [INFO] 10.244.6.148:35819 - 13397 "AAAA IN localhost.cluster.local. udp 41 false 512" NXDOMAIN qr,rd,ra 134 0.000177895s
+2019-04-12T02:06:03.134Z [INFO] 10.244.6.148:51968 - 1993 "AAAA IN localhost.cluster.local. udp 41 false 512" NXDOMAIN qr,aa,rd,ra 134 0.000243293s
+2019-04-12T02:06:04.442Z [INFO] 10.244.5.97:37251 - 9948 "A IN www.nexclipper.com.nexclipper-saas.svc.cluster.local. udp 70 false 512" NXDOMAIN qr,aa,rd,ra 163 0.000259785s
+2019-04-12T02:06:04.443Z [INFO] 10.244.5.97:36630 - 17290 "A IN www.nexclipper.com.svc.cluster.local. udp 54 false 512" NXDOMAIN qr,aa,rd,ra 147 0.000172129s
+[INFO] Reloading
+ [INFO] plugin/reload: Running configuration MD5 = f65c4821c8a9b7b5eb30fa4fbc167769
+[INFO] Reloading complete
+W0416 14:38:14.992703       1 reflector.go:341] github.com/coredns/coredns/plugin/kubernetes/controller.go:318: watch of *v1.Namespace ended with: too old resource version: 7553218 (8540570)
+W0416 14:38:15.433284       1 reflector.go:341] github.com/coredns/coredns/plugin/kubernetes/controller.go:311: watch of *v1.Service ended with: too old resource version: 8297175 (8540579)
+W0420 15:19:21.290022       1 reflector.go:341] github.com/coredns/coredns/plugin/kubernetes/controller.go:311: watch of *v1.Service ended with: too old resource version: 8540579 (9187548)
+W0420 15:19:21.290145       1 reflector.go:341] github.com/coredns/coredns/plugin/kubernetes/controller.go:318: watch of *v1.Namespace ended with: too old resource version: 8540570 (9187548)

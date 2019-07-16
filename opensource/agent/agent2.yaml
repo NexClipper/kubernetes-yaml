@@ -1,37 +1,18 @@
-kind: ServiceAccount 
-apiVersion: v1 
-metadata: 
-  name: root-sa
-  namespace: nexclipperagent
----
-kind: ClusterRoleBinding 
-apiVersion: rbac.authorization.k8s.io/v1beta1
-metadata:
-  name: root-sa-kube-system-cluster-admin
-subjects: 
-- kind: ServiceAccount 
-  name: root-sa 
-  namespace: nexclipperagent
-roleRef: 
-  apiGroup: rbac.authorization.k8s.io 
-  kind: ClusterRole 
-  name: cluster-admin
----
 apiVersion: extensions/v1beta1
 kind: DaemonSet
 metadata:
-  name: nexclipper
+  name: nexclipper-agent2
   namespace: nexclipperagent
   labels:
-    app: nexclipper
+    app: nexclipper-agent2
 spec:
   selector:
     matchLabels:
-      name: nexclipper
+      name: nexclipper-agent2
   template:
     metadata:
       labels:
-        name: nexclipper
+        name: nexclipper-agent2
     spec:
       automountServiceAccountToken: true
       volumes:
@@ -54,6 +35,7 @@ spec:
       - name: pki
         hostPath:
           path: /etc/kubernetes/pki
+      serviceAccount: agent-sa
       hostNetwork: true
       hostPID: true
       hostIPC: true
@@ -65,20 +47,16 @@ spec:
         effect: NoExecute
         key: node-role.kubernetes.io/master
       containers:
-      - name: nexclipper
-        image: nexclipper/nexagent:latest
+      - name: nexclipper-agent2
+        image: nexclipper/nexagent:master
         imagePullPolicy: Always
         securityContext:
           privileged: true
         env:
-        - name: agent_key
-          value: d670dbfc-f98d-4595-ad3b-2aec5e227438
         - name: agent_endpoint
-          value: agent.nexclipper.com
-        - name: k8s_apiserver_protocol
-          value: https
-        - name: k8s_apiserver_port
-          value: '6443'
+          value: 192.168.0.180:32100
+        - name: cluster_id
+          value: "2"
         volumeMounts:
         - mountPath: /var/run/docker.sock
           name: docker-sock
@@ -93,24 +71,24 @@ spec:
         - mountPath: /pki
           name: pki
 
---- 
+---
 
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: nexclipper-k8s
+  name: nexclipper-agent2-k8s
   namespace: nexclipperagent
   labels:
-    app: nexclipper-k8s
+    app: nexclipper-agent2-k8s
 spec:
   replicas: 1
   selector:
     matchLabels:
-      name: nexclipper-k8s
+      name: nexclipper-agent2-k8s
   template:
     metadata:
       labels:
-        name: nexclipper-k8s
+        name: nexclipper-agent2-k8s
     spec:
       volumes:
       - name: dev
@@ -128,13 +106,13 @@ spec:
       - name: docker
         hostPath:
           path: /var/lib/docker
-      serviceAccount: root-sa
+      serviceAccount: agent-sa
       hostNetwork: true
       hostPID: true
       hostIPC: true
       containers:
-      - name: nexclipper-k8s
-        image: nexclipper/nexagent:k8s-v01
+      - name: nexclipper-agent2-k8s
+        image: nexclipper/nexagent:master-k8s
         resources:
           limits:
             memory: 700Mi
@@ -144,18 +122,10 @@ spec:
         securityContext:
           privileged: true
         env:
-        - name: agent_key
-          value: d670dbfc-f98d-4595-ad3b-2aec5e227438
         - name: agent_endpoint
-          value: agent.nexclipper.com
-        - name: k8s_apiserver_protocol
-          value: https
-        - name: k8s_cluster_provider
-          value: ADM
-        - name: k8s_apiserver_endpoint
-          value: 10.0.0.1
-        - name: k8s_apiserver_port
-          value: '443'
+          value: 192.168.0.180:32100
+        - name: cluster_id
+          value: "2"
         volumeMounts:
         - mountPath: /dev
           name: dev
@@ -167,4 +137,3 @@ spec:
           name: pki
         - mountPath: /var/lib/docker
           name: docker
-
